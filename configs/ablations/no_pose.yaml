@@ -1,0 +1,5 @@
+# Ablation: drop the 64 pose dims at the projector input.
+# Tests whether pose adds value over face+body+bbox.
+model:
+  visual:
+    use_pose: false

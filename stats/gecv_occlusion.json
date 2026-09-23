@@ -1,0 +1,51 @@
+{
+  "config": {
+    "video_dir": "/path/to/datasets/GECV/GECV",
+    "num_frames_per_video": 16,
+    "classes": [
+      "positive",
+      "negative",
+      "neutral"
+    ],
+    "label_source": "parent_directory"
+  },
+  "processing": {
+    "num_videos_succeeded": 408,
+    "num_videos_failed": 0,
+    "per_class_counts": {
+      "positive": 201,
+      "negative": 100,
+      "neutral": 107
+    }
+  },
+  "overall": {
+    "num_videos": 408,
+    "mean_faces_per_frame": 25.44485294117647,
+    "median_faces_per_frame": 20.0,
+    "fraction_frames_with_zero_faces": 0.012254901960784314,
+    "fraction_videos_with_50pct_count_variation": 0.7696078431372549
+  },
+  "per_class": {
+    "positive": {
+      "num_videos": 201,
+      "mean_faces_per_frame": 24.51834577114428,
+      "median_faces_per_frame": 20.0,
+      "fraction_frames_with_zero_faces": 0.00808457711442786,
+      "fraction_videos_with_50pct_count_variation": 0.7661691542288557
+    },
+    "negative": {
+      "num_videos": 100,
+      "mean_faces_per_frame": 18.174375,
+      "median_faces_per_frame": 14.0,
+      "fraction_frames_with_zero_faces": 0.028125,
+      "fraction_videos_with_50pct_count_variation": 0.9
+    },
+    "neutral": {
+      "num_videos": 107,
+      "mean_faces_per_frame": 33.98014018691589,
+      "median_faces_per_frame": 27.0,
+      "fraction_frames_with_zero_faces": 0.005257009345794392,
+      "fraction_videos_with_50pct_count_variation": 0.6542056074766355
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# Ablation: train with visual and audio branches DISABLED.
+train:
+  active_branches: [scene]

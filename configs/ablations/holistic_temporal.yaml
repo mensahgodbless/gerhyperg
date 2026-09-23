@@ -1,0 +1,7 @@
+model:
+  visual:
+    backbone: holistic
+  temporal:
+    enabled: true
+train:
+  active_branches: [visual, audio, scene, temporal]

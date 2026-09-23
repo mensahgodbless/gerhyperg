@@ -1,0 +1,37 @@
+{
+  "seed": 44,
+  "best_dev_acc": 0.7575187683105469,
+  "best_dev_epoch": 25,
+  "test_metrics": {
+    "accuracy": 0.6566579341888428,
+    "weighted_f1": 0.6558664359778024,
+    "per_class_accuracy": [
+      0.695364236831665,
+      0.5928571224212646,
+      0.6902173757553101
+    ],
+    "per_class_names": [
+      "positive",
+      "neutral",
+      "negative"
+    ],
+    "confusion_matrix": [
+      [
+        210,
+        57,
+        35
+      ],
+      [
+        90,
+        166,
+        24
+      ],
+      [
+        29,
+        28,
+        127
+      ]
+    ],
+    "num_samples": 766
+  }
+}

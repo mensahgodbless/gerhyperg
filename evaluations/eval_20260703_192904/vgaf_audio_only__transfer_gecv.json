@@ -1,0 +1,56 @@
+{
+  "eval": "transfer_gecv",
+  "config": "audio_only",
+  "n_checkpoints": 5,
+  "accuracy_mean": 57.15686202049255,
+  "accuracy_std": 2.0294346839041406,
+  "f1_name": "macro_f1",
+  "f1_mean": 53.987620239294976,
+  "f1_std": 2.248431349914364,
+  "per_class_accuracy_mean": {
+    "positive": 64.38,
+    "neutral": 62.62,
+    "negative": 36.8
+  },
+  "confusion_sum": [
+    [
+      647,
+      136,
+      222
+    ],
+    [
+      96,
+      335,
+      104
+    ],
+    [
+      196,
+      120,
+      184
+    ]
+  ],
+  "recall_pct": [
+    [
+      64.38,
+      13.53,
+      22.09
+    ],
+    [
+      17.94,
+      62.62,
+      19.44
+    ],
+    [
+      39.2,
+      24.0,
+      36.8
+    ]
+  ],
+  "checkpoints": [
+    "./results/vgaf_audio_only/seed_42/best_model.pt",
+    "./results/vgaf_audio_only/seed_43/best_model.pt",
+    "./results/vgaf_audio_only/seed_44/best_model.pt",
+    "./results/vgaf_audio_only/seed_45/best_model.pt",
+    "./results/vgaf_audio_only/seed_46/best_model.pt"
+  ]
+}

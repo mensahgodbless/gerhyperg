@@ -1,0 +1,7 @@
+# configs/ablations/full_4branch.yaml
+model:
+  temporal:
+    enabled: true
+
+train:
+  active_branches: [visual, audio, scene, temporal]

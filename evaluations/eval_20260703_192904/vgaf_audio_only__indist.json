@@ -1,0 +1,56 @@
+{
+  "eval": "vgaf",
+  "config": "audio_only",
+  "n_checkpoints": 5,
+  "accuracy_mean": 48.590078353881836,
+  "accuracy_std": 2.059852341018097,
+  "f1_name": "macro_f1",
+  "f1_mean": 47.921359585805014,
+  "f1_std": 2.1922091534696633,
+  "per_class_accuracy_mean": {
+    "positive": 36.69,
+    "neutral": 57.36,
+    "negative": 54.78
+  },
+  "confusion_sum": [
+    [
+      554,
+      353,
+      603
+    ],
+    [
+      223,
+      803,
+      374
+    ],
+    [
+      175,
+      241,
+      504
+    ]
+  ],
+  "recall_pct": [
+    [
+      36.69,
+      23.38,
+      39.93
+    ],
+    [
+      15.93,
+      57.36,
+      26.71
+    ],
+    [
+      19.02,
+      26.2,
+      54.78
+    ]
+  ],
+  "checkpoints": [
+    "./results/vgaf_audio_only/seed_42/best_model.pt",
+    "./results/vgaf_audio_only/seed_43/best_model.pt",
+    "./results/vgaf_audio_only/seed_44/best_model.pt",
+    "./results/vgaf_audio_only/seed_45/best_model.pt",
+    "./results/vgaf_audio_only/seed_46/best_model.pt"
+  ]
+}

@@ -1,0 +1,3730 @@
+{
+  "output_root": "./evaluations/eval_20260703_192904",
+  "results": [
+    {
+      "name": "vgaf_main__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_main",
+      "eval_dataset": "vgaf",
+      "ablation": "main",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "main",
+        "n_checkpoints": 5,
+        "accuracy_mean": 74.96083617210388,
+        "accuracy_std": 1.6292936273506846,
+        "f1_name": "macro_f1",
+        "f1_mean": 74.04300404586913,
+        "f1_std": 1.59015741857162,
+        "per_class_accuracy_mean": {
+          "positive": 83.71,
+          "neutral": 70.57,
+          "negative": 67.28
+        },
+        "confusion_sum": [
+          [
+            1264,
+            174,
+            72
+          ],
+          [
+            239,
+            988,
+            173
+          ],
+          [
+            82,
+            219,
+            619
+          ]
+        ],
+        "recall_pct": [
+          [
+            83.71,
+            11.52,
+            4.77
+          ],
+          [
+            17.07,
+            70.57,
+            12.36
+          ],
+          [
+            8.91,
+            23.8,
+            67.28
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_main/seed_42/best_model.pt",
+          "./results/vgaf_main/seed_43/best_model.pt",
+          "./results/vgaf_main/seed_44/best_model.pt",
+          "./results/vgaf_main/seed_45/best_model.pt",
+          "./results/vgaf_main/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_main__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_main",
+      "eval_dataset": "gecv",
+      "ablation": "main",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "main",
+        "n_checkpoints": 5,
+        "accuracy_mean": 73.33333253860474,
+        "accuracy_std": 1.4241009412179158,
+        "f1_name": "macro_f1",
+        "f1_mean": 70.72051374291907,
+        "f1_std": 1.5620603251547578,
+        "per_class_accuracy_mean": {
+          "positive": 81.19,
+          "neutral": 69.53,
+          "negative": 61.6
+        },
+        "confusion_sum": [
+          [
+            816,
+            66,
+            123
+          ],
+          [
+            88,
+            372,
+            75
+          ],
+          [
+            91,
+            101,
+            308
+          ]
+        ],
+        "recall_pct": [
+          [
+            81.19,
+            6.57,
+            12.24
+          ],
+          [
+            16.45,
+            69.53,
+            14.02
+          ],
+          [
+            18.2,
+            20.2,
+            61.6
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_main/seed_42/best_model.pt",
+          "./results/vgaf_main/seed_43/best_model.pt",
+          "./results/vgaf_main/seed_44/best_model.pt",
+          "./results/vgaf_main/seed_45/best_model.pt",
+          "./results/vgaf_main/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_no_pose__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_no_pose",
+      "eval_dataset": "vgaf",
+      "ablation": "no_pose",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "no_pose",
+        "n_checkpoints": 5,
+        "accuracy_mean": 75.16971230506897,
+        "accuracy_std": 0.39940219415547623,
+        "f1_name": "macro_f1",
+        "f1_mean": 74.31242611541306,
+        "f1_std": 0.6046116646800771,
+        "per_class_accuracy_mean": {
+          "positive": 84.77,
+          "neutral": 67.64,
+          "negative": 70.87
+        },
+        "confusion_sum": [
+          [
+            1280,
+            165,
+            65
+          ],
+          [
+            245,
+            947,
+            208
+          ],
+          [
+            83,
+            185,
+            652
+          ]
+        ],
+        "recall_pct": [
+          [
+            84.77,
+            10.93,
+            4.3
+          ],
+          [
+            17.5,
+            67.64,
+            14.86
+          ],
+          [
+            9.02,
+            20.11,
+            70.87
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_no_pose/seed_42/best_model.pt",
+          "./results/vgaf_no_pose/seed_43/best_model.pt",
+          "./results/vgaf_no_pose/seed_44/best_model.pt",
+          "./results/vgaf_no_pose/seed_45/best_model.pt",
+          "./results/vgaf_no_pose/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_no_pose__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_no_pose",
+      "eval_dataset": "gecv",
+      "ablation": "no_pose",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "no_pose",
+        "n_checkpoints": 5,
+        "accuracy_mean": 72.69607901573181,
+        "accuracy_std": 1.176471610864402,
+        "f1_name": "macro_f1",
+        "f1_mean": 69.18473123933721,
+        "f1_std": 0.8198430478112297,
+        "per_class_accuracy_mean": {
+          "positive": 82.69,
+          "neutral": 72.9,
+          "negative": 52.4
+        },
+        "confusion_sum": [
+          [
+            831,
+            87,
+            87
+          ],
+          [
+            74,
+            390,
+            71
+          ],
+          [
+            109,
+            129,
+            262
+          ]
+        ],
+        "recall_pct": [
+          [
+            82.69,
+            8.66,
+            8.66
+          ],
+          [
+            13.83,
+            72.9,
+            13.27
+          ],
+          [
+            21.8,
+            25.8,
+            52.4
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_no_pose/seed_42/best_model.pt",
+          "./results/vgaf_no_pose/seed_43/best_model.pt",
+          "./results/vgaf_no_pose/seed_44/best_model.pt",
+          "./results/vgaf_no_pose/seed_45/best_model.pt",
+          "./results/vgaf_no_pose/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_mean_pool__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_mean_pool",
+      "eval_dataset": "vgaf",
+      "ablation": "mean_pool",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "mean_pool",
+        "n_checkpoints": 5,
+        "accuracy_mean": 74.28198575973511,
+        "accuracy_std": 0.5660445434972772,
+        "f1_name": "macro_f1",
+        "f1_mean": 73.76141486868426,
+        "f1_std": 0.4236671311659163,
+        "per_class_accuracy_mean": {
+          "positive": 80.79,
+          "neutral": 69.79,
+          "negative": 70.43
+        },
+        "confusion_sum": [
+          [
+            1220,
+            218,
+            72
+          ],
+          [
+            246,
+            977,
+            177
+          ],
+          [
+            63,
+            209,
+            648
+          ]
+        ],
+        "recall_pct": [
+          [
+            80.79,
+            14.44,
+            4.77
+          ],
+          [
+            17.57,
+            69.79,
+            12.64
+          ],
+          [
+            6.85,
+            22.72,
+            70.43
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_mean_pool/seed_42/best_model.pt",
+          "./results/vgaf_mean_pool/seed_43/best_model.pt",
+          "./results/vgaf_mean_pool/seed_44/best_model.pt",
+          "./results/vgaf_mean_pool/seed_45/best_model.pt",
+          "./results/vgaf_mean_pool/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_mean_pool__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_mean_pool",
+      "eval_dataset": "gecv",
+      "ablation": "mean_pool",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "mean_pool",
+        "n_checkpoints": 5,
+        "accuracy_mean": 72.64706015586853,
+        "accuracy_std": 2.059991181087081,
+        "f1_name": "macro_f1",
+        "f1_mean": 69.63455305587384,
+        "f1_std": 2.145711580694071,
+        "per_class_accuracy_mean": {
+          "positive": 79.2,
+          "neutral": 74.39,
+          "negative": 57.6
+        },
+        "confusion_sum": [
+          [
+            796,
+            89,
+            120
+          ],
+          [
+            64,
+            398,
+            73
+          ],
+          [
+            48,
+            164,
+            288
+          ]
+        ],
+        "recall_pct": [
+          [
+            79.2,
+            8.86,
+            11.94
+          ],
+          [
+            11.96,
+            74.39,
+            13.64
+          ],
+          [
+            9.6,
+            32.8,
+            57.6
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_mean_pool/seed_42/best_model.pt",
+          "./results/vgaf_mean_pool/seed_43/best_model.pt",
+          "./results/vgaf_mean_pool/seed_44/best_model.pt",
+          "./results/vgaf_mean_pool/seed_45/best_model.pt",
+          "./results/vgaf_mean_pool/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_gat__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_gat",
+      "eval_dataset": "vgaf",
+      "ablation": "gat",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "gat",
+        "n_checkpoints": 5,
+        "accuracy_mean": 74.51697111129761,
+        "accuracy_std": 0.789359513155248,
+        "f1_name": "macro_f1",
+        "f1_mean": 73.6925515516768,
+        "f1_std": 0.7765523717241429,
+        "per_class_accuracy_mean": {
+          "positive": 82.05,
+          "neutral": 69.86,
+          "negative": 69.24
+        },
+        "confusion_sum": [
+          [
+            1239,
+            188,
+            83
+          ],
+          [
+            227,
+            978,
+            195
+          ],
+          [
+            76,
+            207,
+            637
+          ]
+        ],
+        "recall_pct": [
+          [
+            82.05,
+            12.45,
+            5.5
+          ],
+          [
+            16.21,
+            69.86,
+            13.93
+          ],
+          [
+            8.26,
+            22.5,
+            69.24
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_gat/seed_42/best_model.pt",
+          "./results/vgaf_gat/seed_43/best_model.pt",
+          "./results/vgaf_gat/seed_44/best_model.pt",
+          "./results/vgaf_gat/seed_45/best_model.pt",
+          "./results/vgaf_gat/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_gat__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_gat",
+      "eval_dataset": "gecv",
+      "ablation": "gat",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "gat",
+        "n_checkpoints": 5,
+        "accuracy_mean": 74.70588326454163,
+        "accuracy_std": 1.0895156114158713,
+        "f1_name": "macro_f1",
+        "f1_mean": 72.29036956408767,
+        "f1_std": 1.5117087187309917,
+        "per_class_accuracy_mean": {
+          "positive": 80.3,
+          "neutral": 71.4,
+          "negative": 67.0
+        },
+        "confusion_sum": [
+          [
+            807,
+            72,
+            126
+          ],
+          [
+            68,
+            382,
+            85
+          ],
+          [
+            53,
+            112,
+            335
+          ]
+        ],
+        "recall_pct": [
+          [
+            80.3,
+            7.16,
+            12.54
+          ],
+          [
+            12.71,
+            71.4,
+            15.89
+          ],
+          [
+            10.6,
+            22.4,
+            67.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_gat/seed_42/best_model.pt",
+          "./results/vgaf_gat/seed_43/best_model.pt",
+          "./results/vgaf_gat/seed_44/best_model.pt",
+          "./results/vgaf_gat/seed_45/best_model.pt",
+          "./results/vgaf_gat/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_holistic__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_holistic",
+      "eval_dataset": "vgaf",
+      "ablation": "holistic",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "holistic",
+        "n_checkpoints": 5,
+        "accuracy_mean": 72.19321131706238,
+        "accuracy_std": 1.3440759417833787,
+        "f1_name": "macro_f1",
+        "f1_mean": 71.73847420357092,
+        "f1_std": 1.3356090056101622,
+        "per_class_accuracy_mean": {
+          "positive": 78.34,
+          "neutral": 69.07,
+          "negative": 66.85
+        },
+        "confusion_sum": [
+          [
+            1183,
+            256,
+            71
+          ],
+          [
+            272,
+            967,
+            161
+          ],
+          [
+            77,
+            228,
+            615
+          ]
+        ],
+        "recall_pct": [
+          [
+            78.34,
+            16.95,
+            4.7
+          ],
+          [
+            19.43,
+            69.07,
+            11.5
+          ],
+          [
+            8.37,
+            24.78,
+            66.85
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_holistic/seed_42/best_model.pt",
+          "./results/vgaf_holistic/seed_43/best_model.pt",
+          "./results/vgaf_holistic/seed_44/best_model.pt",
+          "./results/vgaf_holistic/seed_45/best_model.pt",
+          "./results/vgaf_holistic/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_holistic__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_holistic",
+      "eval_dataset": "gecv",
+      "ablation": "holistic",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "holistic",
+        "n_checkpoints": 5,
+        "accuracy_mean": 75.686274766922,
+        "accuracy_std": 3.4745181800177467,
+        "f1_name": "macro_f1",
+        "f1_mean": 73.57229534119541,
+        "f1_std": 3.883530452444322,
+        "per_class_accuracy_mean": {
+          "positive": 79.0,
+          "neutral": 74.77,
+          "negative": 70.0
+        },
+        "confusion_sum": [
+          [
+            794,
+            92,
+            119
+          ],
+          [
+            58,
+            400,
+            77
+          ],
+          [
+            24,
+            126,
+            350
+          ]
+        ],
+        "recall_pct": [
+          [
+            79.0,
+            9.15,
+            11.84
+          ],
+          [
+            10.84,
+            74.77,
+            14.39
+          ],
+          [
+            4.8,
+            25.2,
+            70.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_holistic/seed_42/best_model.pt",
+          "./results/vgaf_holistic/seed_43/best_model.pt",
+          "./results/vgaf_holistic/seed_44/best_model.pt",
+          "./results/vgaf_holistic/seed_45/best_model.pt",
+          "./results/vgaf_holistic/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_hypergraph_temporal__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_hypergraph_temporal",
+      "eval_dataset": "vgaf",
+      "ablation": "hypergraph_temporal",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "hypergraph_temporal",
+        "n_checkpoints": 5,
+        "accuracy_mean": 75.58746695518494,
+        "accuracy_std": 1.7397749984789883,
+        "f1_name": "macro_f1",
+        "f1_mean": 74.75977465301865,
+        "f1_std": 1.8824737750280232,
+        "per_class_accuracy_mean": {
+          "positive": 84.11,
+          "neutral": 70.64,
+          "negative": 69.13
+        },
+        "confusion_sum": [
+          [
+            1270,
+            177,
+            63
+          ],
+          [
+            241,
+            989,
+            170
+          ],
+          [
+            99,
+            185,
+            636
+          ]
+        ],
+        "recall_pct": [
+          [
+            84.11,
+            11.72,
+            4.17
+          ],
+          [
+            17.21,
+            70.64,
+            12.14
+          ],
+          [
+            10.76,
+            20.11,
+            69.13
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_hypergraph_temporal/seed_42/best_model.pt",
+          "./results/vgaf_hypergraph_temporal/seed_43/best_model.pt",
+          "./results/vgaf_hypergraph_temporal/seed_44/best_model.pt",
+          "./results/vgaf_hypergraph_temporal/seed_45/best_model.pt",
+          "./results/vgaf_hypergraph_temporal/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_hypergraph_temporal__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_hypergraph_temporal",
+      "eval_dataset": "gecv",
+      "ablation": "hypergraph_temporal",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "hypergraph_temporal",
+        "n_checkpoints": 5,
+        "accuracy_mean": 72.9411768913269,
+        "accuracy_std": 0.8289973930754412,
+        "f1_name": "macro_f1",
+        "f1_mean": 70.07535819414021,
+        "f1_std": 0.9153122670011535,
+        "per_class_accuracy_mean": {
+          "positive": 82.39,
+          "neutral": 70.65,
+          "negative": 56.4
+        },
+        "confusion_sum": [
+          [
+            828,
+            52,
+            125
+          ],
+          [
+            79,
+            378,
+            78
+          ],
+          [
+            128,
+            90,
+            282
+          ]
+        ],
+        "recall_pct": [
+          [
+            82.39,
+            5.17,
+            12.44
+          ],
+          [
+            14.77,
+            70.65,
+            14.58
+          ],
+          [
+            25.6,
+            18.0,
+            56.4
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_hypergraph_temporal/seed_42/best_model.pt",
+          "./results/vgaf_hypergraph_temporal/seed_43/best_model.pt",
+          "./results/vgaf_hypergraph_temporal/seed_44/best_model.pt",
+          "./results/vgaf_hypergraph_temporal/seed_45/best_model.pt",
+          "./results/vgaf_hypergraph_temporal/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_no_pose_temporal__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_no_pose_temporal",
+      "eval_dataset": "vgaf",
+      "ablation": "no_pose_temporal",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "no_pose_temporal",
+        "n_checkpoints": 5,
+        "accuracy_mean": 76.05744123458862,
+        "accuracy_std": 0.6427415909007748,
+        "f1_name": "macro_f1",
+        "f1_mean": 75.42254174100302,
+        "f1_std": 0.5768813574735969,
+        "per_class_accuracy_mean": {
+          "positive": 84.57,
+          "neutral": 68.5,
+          "negative": 73.59
+        },
+        "confusion_sum": [
+          [
+            1277,
+            166,
+            67
+          ],
+          [
+            250,
+            959,
+            191
+          ],
+          [
+            93,
+            150,
+            677
+          ]
+        ],
+        "recall_pct": [
+          [
+            84.57,
+            10.99,
+            4.44
+          ],
+          [
+            17.86,
+            68.5,
+            13.64
+          ],
+          [
+            10.11,
+            16.3,
+            73.59
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_no_pose_temporal/seed_42/best_model.pt",
+          "./results/vgaf_no_pose_temporal/seed_43/best_model.pt",
+          "./results/vgaf_no_pose_temporal/seed_44/best_model.pt",
+          "./results/vgaf_no_pose_temporal/seed_45/best_model.pt",
+          "./results/vgaf_no_pose_temporal/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_no_pose_temporal__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_no_pose_temporal",
+      "eval_dataset": "gecv",
+      "ablation": "no_pose_temporal",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "no_pose_temporal",
+        "n_checkpoints": 5,
+        "accuracy_mean": 72.54901885986328,
+        "accuracy_std": 1.324437840126275,
+        "f1_name": "macro_f1",
+        "f1_mean": 69.22866829352814,
+        "f1_std": 0.9338581940678822,
+        "per_class_accuracy_mean": {
+          "positive": 82.99,
+          "neutral": 71.96,
+          "negative": 52.2
+        },
+        "confusion_sum": [
+          [
+            834,
+            55,
+            116
+          ],
+          [
+            76,
+            385,
+            74
+          ],
+          [
+            138,
+            101,
+            261
+          ]
+        ],
+        "recall_pct": [
+          [
+            82.99,
+            5.47,
+            11.54
+          ],
+          [
+            14.21,
+            71.96,
+            13.83
+          ],
+          [
+            27.6,
+            20.2,
+            52.2
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_no_pose_temporal/seed_42/best_model.pt",
+          "./results/vgaf_no_pose_temporal/seed_43/best_model.pt",
+          "./results/vgaf_no_pose_temporal/seed_44/best_model.pt",
+          "./results/vgaf_no_pose_temporal/seed_45/best_model.pt",
+          "./results/vgaf_no_pose_temporal/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_mean_pool_temporal__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_mean_pool_temporal",
+      "eval_dataset": "vgaf",
+      "ablation": "mean_pool_temporal",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "mean_pool_temporal",
+        "n_checkpoints": 5,
+        "accuracy_mean": 75.4830276966095,
+        "accuracy_std": 0.9097270810323967,
+        "f1_name": "macro_f1",
+        "f1_mean": 75.205451112742,
+        "f1_std": 0.9132769696339114,
+        "per_class_accuracy_mean": {
+          "positive": 80.26,
+          "neutral": 70.36,
+          "negative": 75.43
+        },
+        "confusion_sum": [
+          [
+            1212,
+            222,
+            76
+          ],
+          [
+            241,
+            985,
+            174
+          ],
+          [
+            73,
+            153,
+            694
+          ]
+        ],
+        "recall_pct": [
+          [
+            80.26,
+            14.7,
+            5.03
+          ],
+          [
+            17.21,
+            70.36,
+            12.43
+          ],
+          [
+            7.93,
+            16.63,
+            75.43
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_mean_pool_temporal/seed_42/best_model.pt",
+          "./results/vgaf_mean_pool_temporal/seed_43/best_model.pt",
+          "./results/vgaf_mean_pool_temporal/seed_44/best_model.pt",
+          "./results/vgaf_mean_pool_temporal/seed_45/best_model.pt",
+          "./results/vgaf_mean_pool_temporal/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_mean_pool_temporal__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_mean_pool_temporal",
+      "eval_dataset": "gecv",
+      "ablation": "mean_pool_temporal",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "mean_pool_temporal",
+        "n_checkpoints": 5,
+        "accuracy_mean": 72.15686440467834,
+        "accuracy_std": 1.425787749755601,
+        "f1_name": "macro_f1",
+        "f1_mean": 69.57282936681241,
+        "f1_std": 1.648832031020982,
+        "per_class_accuracy_mean": {
+          "positive": 77.61,
+          "neutral": 74.39,
+          "negative": 58.8
+        },
+        "confusion_sum": [
+          [
+            780,
+            75,
+            150
+          ],
+          [
+            62,
+            398,
+            75
+          ],
+          [
+            70,
+            136,
+            294
+          ]
+        ],
+        "recall_pct": [
+          [
+            77.61,
+            7.46,
+            14.93
+          ],
+          [
+            11.59,
+            74.39,
+            14.02
+          ],
+          [
+            14.0,
+            27.2,
+            58.8
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_mean_pool_temporal/seed_42/best_model.pt",
+          "./results/vgaf_mean_pool_temporal/seed_43/best_model.pt",
+          "./results/vgaf_mean_pool_temporal/seed_44/best_model.pt",
+          "./results/vgaf_mean_pool_temporal/seed_45/best_model.pt",
+          "./results/vgaf_mean_pool_temporal/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_gat_temporal__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_gat_temporal",
+      "eval_dataset": "vgaf",
+      "ablation": "gat_temporal",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "gat_temporal",
+        "n_checkpoints": 5,
+        "accuracy_mean": 76.21409893035889,
+        "accuracy_std": 1.324663928919949,
+        "f1_name": "macro_f1",
+        "f1_mean": 75.53011653189435,
+        "f1_std": 1.516827174976568,
+        "per_class_accuracy_mean": {
+          "positive": 83.58,
+          "neutral": 71.57,
+          "negative": 71.2
+        },
+        "confusion_sum": [
+          [
+            1262,
+            186,
+            62
+          ],
+          [
+            226,
+            1002,
+            172
+          ],
+          [
+            99,
+            166,
+            655
+          ]
+        ],
+        "recall_pct": [
+          [
+            83.58,
+            12.32,
+            4.11
+          ],
+          [
+            16.14,
+            71.57,
+            12.29
+          ],
+          [
+            10.76,
+            18.04,
+            71.2
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_gat_temporal/seed_42/best_model.pt",
+          "./results/vgaf_gat_temporal/seed_43/best_model.pt",
+          "./results/vgaf_gat_temporal/seed_44/best_model.pt",
+          "./results/vgaf_gat_temporal/seed_45/best_model.pt",
+          "./results/vgaf_gat_temporal/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_gat_temporal__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_gat_temporal",
+      "eval_dataset": "gecv",
+      "ablation": "gat_temporal",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "gat_temporal",
+        "n_checkpoints": 5,
+        "accuracy_mean": 74.46078538894653,
+        "accuracy_std": 1.576268349319887,
+        "f1_name": "macro_f1",
+        "f1_mean": 71.93224617943754,
+        "f1_std": 1.4876738968140246,
+        "per_class_accuracy_mean": {
+          "positive": 81.19,
+          "neutral": 73.64,
+          "negative": 61.8
+        },
+        "confusion_sum": [
+          [
+            816,
+            57,
+            132
+          ],
+          [
+            60,
+            394,
+            81
+          ],
+          [
+            94,
+            97,
+            309
+          ]
+        ],
+        "recall_pct": [
+          [
+            81.19,
+            5.67,
+            13.13
+          ],
+          [
+            11.21,
+            73.64,
+            15.14
+          ],
+          [
+            18.8,
+            19.4,
+            61.8
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_gat_temporal/seed_42/best_model.pt",
+          "./results/vgaf_gat_temporal/seed_43/best_model.pt",
+          "./results/vgaf_gat_temporal/seed_44/best_model.pt",
+          "./results/vgaf_gat_temporal/seed_45/best_model.pt",
+          "./results/vgaf_gat_temporal/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_holistic_temporal__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_holistic_temporal",
+      "eval_dataset": "vgaf",
+      "ablation": "holistic_temporal",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "holistic_temporal",
+        "n_checkpoints": 5,
+        "accuracy_mean": 73.28981757164001,
+        "accuracy_std": 1.8287952929041946,
+        "f1_name": "macro_f1",
+        "f1_mean": 73.06824292425401,
+        "f1_std": 1.9605815797175619,
+        "per_class_accuracy_mean": {
+          "positive": 79.74,
+          "neutral": 68.5,
+          "negative": 70.0
+        },
+        "confusion_sum": [
+          [
+            1204,
+            254,
+            52
+          ],
+          [
+            290,
+            959,
+            151
+          ],
+          [
+            122,
+            154,
+            644
+          ]
+        ],
+        "recall_pct": [
+          [
+            79.74,
+            16.82,
+            3.44
+          ],
+          [
+            20.71,
+            68.5,
+            10.79
+          ],
+          [
+            13.26,
+            16.74,
+            70.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_holistic_temporal/seed_42/best_model.pt",
+          "./results/vgaf_holistic_temporal/seed_43/best_model.pt",
+          "./results/vgaf_holistic_temporal/seed_44/best_model.pt",
+          "./results/vgaf_holistic_temporal/seed_45/best_model.pt",
+          "./results/vgaf_holistic_temporal/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_holistic_temporal__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_holistic_temporal",
+      "eval_dataset": "gecv",
+      "ablation": "holistic_temporal",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "holistic_temporal",
+        "n_checkpoints": 5,
+        "accuracy_mean": 73.82352948188782,
+        "accuracy_std": 1.415640795304234,
+        "f1_name": "macro_f1",
+        "f1_mean": 71.19643642536676,
+        "f1_std": 1.4535002677584847,
+        "per_class_accuracy_mean": {
+          "positive": 80.4,
+          "neutral": 74.02,
+          "negative": 60.4
+        },
+        "confusion_sum": [
+          [
+            808,
+            55,
+            142
+          ],
+          [
+            62,
+            396,
+            77
+          ],
+          [
+            80,
+            118,
+            302
+          ]
+        ],
+        "recall_pct": [
+          [
+            80.4,
+            5.47,
+            14.13
+          ],
+          [
+            11.59,
+            74.02,
+            14.39
+          ],
+          [
+            16.0,
+            23.6,
+            60.4
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_holistic_temporal/seed_42/best_model.pt",
+          "./results/vgaf_holistic_temporal/seed_43/best_model.pt",
+          "./results/vgaf_holistic_temporal/seed_44/best_model.pt",
+          "./results/vgaf_holistic_temporal/seed_45/best_model.pt",
+          "./results/vgaf_holistic_temporal/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_visual_only__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_visual_only",
+      "eval_dataset": "vgaf",
+      "ablation": "visual_only",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "visual_only",
+        "n_checkpoints": 5,
+        "accuracy_mean": 70.44386506080627,
+        "accuracy_std": 2.0535543195415498,
+        "f1_name": "macro_f1",
+        "f1_mean": 69.41374710460515,
+        "f1_std": 2.0141669401247055,
+        "per_class_accuracy_mean": {
+          "positive": 76.36,
+          "neutral": 66.29,
+          "negative": 67.07
+        },
+        "confusion_sum": [
+          [
+            1153,
+            228,
+            129
+          ],
+          [
+            209,
+            928,
+            263
+          ],
+          [
+            74,
+            229,
+            617
+          ]
+        ],
+        "recall_pct": [
+          [
+            76.36,
+            15.1,
+            8.54
+          ],
+          [
+            14.93,
+            66.29,
+            18.79
+          ],
+          [
+            8.04,
+            24.89,
+            67.07
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_visual_only/seed_42/best_model.pt",
+          "./results/vgaf_visual_only/seed_43/best_model.pt",
+          "./results/vgaf_visual_only/seed_44/best_model.pt",
+          "./results/vgaf_visual_only/seed_45/best_model.pt",
+          "./results/vgaf_visual_only/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_visual_only__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_visual_only",
+      "eval_dataset": "gecv",
+      "ablation": "visual_only",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "visual_only",
+        "n_checkpoints": 5,
+        "accuracy_mean": 65.09803891181946,
+        "accuracy_std": 3.028127605214275,
+        "f1_name": "macro_f1",
+        "f1_mean": 61.45466375030363,
+        "f1_std": 1.955322232677326,
+        "per_class_accuracy_mean": {
+          "positive": 72.94,
+          "neutral": 63.36,
+          "negative": 51.2
+        },
+        "confusion_sum": [
+          [
+            733,
+            101,
+            171
+          ],
+          [
+            93,
+            339,
+            103
+          ],
+          [
+            87,
+            157,
+            256
+          ]
+        ],
+        "recall_pct": [
+          [
+            72.94,
+            10.05,
+            17.01
+          ],
+          [
+            17.38,
+            63.36,
+            19.25
+          ],
+          [
+            17.4,
+            31.4,
+            51.2
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_visual_only/seed_42/best_model.pt",
+          "./results/vgaf_visual_only/seed_43/best_model.pt",
+          "./results/vgaf_visual_only/seed_44/best_model.pt",
+          "./results/vgaf_visual_only/seed_45/best_model.pt",
+          "./results/vgaf_visual_only/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_audio_only__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_audio_only",
+      "eval_dataset": "vgaf",
+      "ablation": "audio_only",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "audio_only",
+        "n_checkpoints": 5,
+        "accuracy_mean": 48.590078353881836,
+        "accuracy_std": 2.059852341018097,
+        "f1_name": "macro_f1",
+        "f1_mean": 47.921359585805014,
+        "f1_std": 2.1922091534696633,
+        "per_class_accuracy_mean": {
+          "positive": 36.69,
+          "neutral": 57.36,
+          "negative": 54.78
+        },
+        "confusion_sum": [
+          [
+            554,
+            353,
+            603
+          ],
+          [
+            223,
+            803,
+            374
+          ],
+          [
+            175,
+            241,
+            504
+          ]
+        ],
+        "recall_pct": [
+          [
+            36.69,
+            23.38,
+            39.93
+          ],
+          [
+            15.93,
+            57.36,
+            26.71
+          ],
+          [
+            19.02,
+            26.2,
+            54.78
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_audio_only/seed_42/best_model.pt",
+          "./results/vgaf_audio_only/seed_43/best_model.pt",
+          "./results/vgaf_audio_only/seed_44/best_model.pt",
+          "./results/vgaf_audio_only/seed_45/best_model.pt",
+          "./results/vgaf_audio_only/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_audio_only__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_audio_only",
+      "eval_dataset": "gecv",
+      "ablation": "audio_only",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "audio_only",
+        "n_checkpoints": 5,
+        "accuracy_mean": 57.15686202049255,
+        "accuracy_std": 2.0294346839041406,
+        "f1_name": "macro_f1",
+        "f1_mean": 53.987620239294976,
+        "f1_std": 2.248431349914364,
+        "per_class_accuracy_mean": {
+          "positive": 64.38,
+          "neutral": 62.62,
+          "negative": 36.8
+        },
+        "confusion_sum": [
+          [
+            647,
+            136,
+            222
+          ],
+          [
+            96,
+            335,
+            104
+          ],
+          [
+            196,
+            120,
+            184
+          ]
+        ],
+        "recall_pct": [
+          [
+            64.38,
+            13.53,
+            22.09
+          ],
+          [
+            17.94,
+            62.62,
+            19.44
+          ],
+          [
+            39.2,
+            24.0,
+            36.8
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_audio_only/seed_42/best_model.pt",
+          "./results/vgaf_audio_only/seed_43/best_model.pt",
+          "./results/vgaf_audio_only/seed_44/best_model.pt",
+          "./results/vgaf_audio_only/seed_45/best_model.pt",
+          "./results/vgaf_audio_only/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_scene_only__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_scene_only",
+      "eval_dataset": "vgaf",
+      "ablation": "scene_only",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "scene_only",
+        "n_checkpoints": 5,
+        "accuracy_mean": 68.250652551651,
+        "accuracy_std": 1.6807809292224554,
+        "f1_name": "macro_f1",
+        "f1_mean": 68.10003434170137,
+        "f1_std": 1.7596859056564735,
+        "per_class_accuracy_mean": {
+          "positive": 78.54,
+          "neutral": 60.64,
+          "negative": 62.93
+        },
+        "confusion_sum": [
+          [
+            1186,
+            288,
+            36
+          ],
+          [
+            420,
+            849,
+            131
+          ],
+          [
+            130,
+            211,
+            579
+          ]
+        ],
+        "recall_pct": [
+          [
+            78.54,
+            19.07,
+            2.38
+          ],
+          [
+            30.0,
+            60.64,
+            9.36
+          ],
+          [
+            14.13,
+            22.93,
+            62.93
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_scene_only/seed_42/best_model.pt",
+          "./results/vgaf_scene_only/seed_43/best_model.pt",
+          "./results/vgaf_scene_only/seed_44/best_model.pt",
+          "./results/vgaf_scene_only/seed_45/best_model.pt",
+          "./results/vgaf_scene_only/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_scene_only__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_scene_only",
+      "eval_dataset": "gecv",
+      "ablation": "scene_only",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "scene_only",
+        "n_checkpoints": 5,
+        "accuracy_mean": 79.41176414489746,
+        "accuracy_std": 2.0739409582007573,
+        "f1_name": "macro_f1",
+        "f1_mean": 75.81770039104345,
+        "f1_std": 2.154814971187806,
+        "per_class_accuracy_mean": {
+          "positive": 91.44,
+          "neutral": 73.08,
+          "negative": 62.0
+        },
+        "confusion_sum": [
+          [
+            919,
+            45,
+            41
+          ],
+          [
+            61,
+            391,
+            83
+          ],
+          [
+            70,
+            120,
+            310
+          ]
+        ],
+        "recall_pct": [
+          [
+            91.44,
+            4.48,
+            4.08
+          ],
+          [
+            11.4,
+            73.08,
+            15.51
+          ],
+          [
+            14.0,
+            24.0,
+            62.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_scene_only/seed_42/best_model.pt",
+          "./results/vgaf_scene_only/seed_43/best_model.pt",
+          "./results/vgaf_scene_only/seed_44/best_model.pt",
+          "./results/vgaf_scene_only/seed_45/best_model.pt",
+          "./results/vgaf_scene_only/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_temporal_only__indist",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_temporal_only",
+      "eval_dataset": "vgaf",
+      "ablation": "temporal_only",
+      "transfer": false,
+      "metrics": {
+        "eval": "vgaf",
+        "config": "temporal_only",
+        "n_checkpoints": 5,
+        "accuracy_mean": 65.4830276966095,
+        "accuracy_std": 1.256521921327767,
+        "f1_name": "macro_f1",
+        "f1_mean": 65.53471024524976,
+        "f1_std": 1.3569921596011048,
+        "per_class_accuracy_mean": {
+          "positive": 70.07,
+          "neutral": 57.5,
+          "negative": 70.11
+        },
+        "confusion_sum": [
+          [
+            1058,
+            254,
+            198
+          ],
+          [
+            442,
+            805,
+            153
+          ],
+          [
+            170,
+            105,
+            645
+          ]
+        ],
+        "recall_pct": [
+          [
+            70.07,
+            16.82,
+            13.11
+          ],
+          [
+            31.57,
+            57.5,
+            10.93
+          ],
+          [
+            18.48,
+            11.41,
+            70.11
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_temporal_only/seed_42/best_model.pt",
+          "./results/vgaf_temporal_only/seed_43/best_model.pt",
+          "./results/vgaf_temporal_only/seed_44/best_model.pt",
+          "./results/vgaf_temporal_only/seed_45/best_model.pt",
+          "./results/vgaf_temporal_only/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "vgaf_temporal_only__transfer_gecv",
+      "returncode": 0,
+      "run_dir": "./results/vgaf_temporal_only",
+      "eval_dataset": "gecv",
+      "ablation": "temporal_only",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_gecv",
+        "config": "temporal_only",
+        "n_checkpoints": 5,
+        "accuracy_mean": 63.186274766922004,
+        "accuracy_std": 1.9632335429715586,
+        "f1_name": "macro_f1",
+        "f1_mean": 61.61967826226387,
+        "f1_std": 1.9676635289034554,
+        "per_class_accuracy_mean": {
+          "positive": 69.85,
+          "neutral": 65.05,
+          "negative": 47.8
+        },
+        "confusion_sum": [
+          [
+            702,
+            46,
+            257
+          ],
+          [
+            84,
+            348,
+            103
+          ],
+          [
+            219,
+            42,
+            239
+          ]
+        ],
+        "recall_pct": [
+          [
+            69.85,
+            4.58,
+            25.57
+          ],
+          [
+            15.7,
+            65.05,
+            19.25
+          ],
+          [
+            43.8,
+            8.4,
+            47.8
+          ]
+        ],
+        "checkpoints": [
+          "./results/vgaf_temporal_only/seed_42/best_model.pt",
+          "./results/vgaf_temporal_only/seed_43/best_model.pt",
+          "./results/vgaf_temporal_only/seed_44/best_model.pt",
+          "./results/vgaf_temporal_only/seed_45/best_model.pt",
+          "./results/vgaf_temporal_only/seed_46/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_main__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_main",
+      "eval_dataset": "gecv",
+      "ablation": "main",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "main",
+        "n_checkpoints": 10,
+        "accuracy_mean": 91.18176519870758,
+        "accuracy_std": 3.671257929128694,
+        "f1_name": "macro_f1",
+        "f1_mean": 90.18764770321172,
+        "f1_std": 4.249381693954934,
+        "per_class_accuracy_mean": {
+          "positive": 97.0,
+          "neutral": 82.18,
+          "negative": 89.0
+        },
+        "confusion_sum": [
+          [
+            195,
+            6,
+            0
+          ],
+          [
+            13,
+            88,
+            6
+          ],
+          [
+            6,
+            5,
+            89
+          ]
+        ],
+        "recall_pct": [
+          [
+            97.01,
+            2.99,
+            0.0
+          ],
+          [
+            12.15,
+            82.24,
+            5.61
+          ],
+          [
+            6.0,
+            5.0,
+            89.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_main/fold_0/best_model.pt",
+          "./results/gecv_main/fold_1/best_model.pt",
+          "./results/gecv_main/fold_2/best_model.pt",
+          "./results/gecv_main/fold_3/best_model.pt",
+          "./results/gecv_main/fold_4/best_model.pt",
+          "./results/gecv_main/fold_5/best_model.pt",
+          "./results/gecv_main/fold_6/best_model.pt",
+          "./results/gecv_main/fold_7/best_model.pt",
+          "./results/gecv_main/fold_8/best_model.pt",
+          "./results/gecv_main/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_main__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_main",
+      "eval_dataset": "vgaf",
+      "ablation": "main",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "main",
+        "n_checkpoints": 10,
+        "accuracy_mean": 57.40208804607392,
+        "accuracy_std": 1.4181779296914583,
+        "f1_name": "macro_f1",
+        "f1_mean": 56.012352842086656,
+        "f1_std": 2.2199175847493953,
+        "per_class_accuracy_mean": {
+          "positive": 59.07,
+          "neutral": 62.14,
+          "negative": 47.45
+        },
+        "confusion_sum": [
+          [
+            1784,
+            764,
+            472
+          ],
+          [
+            655,
+            1740,
+            405
+          ],
+          [
+            384,
+            583,
+            873
+          ]
+        ],
+        "recall_pct": [
+          [
+            59.07,
+            25.3,
+            15.63
+          ],
+          [
+            23.39,
+            62.14,
+            14.46
+          ],
+          [
+            20.87,
+            31.68,
+            47.45
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_main/fold_0/best_model.pt",
+          "./results/gecv_main/fold_1/best_model.pt",
+          "./results/gecv_main/fold_2/best_model.pt",
+          "./results/gecv_main/fold_3/best_model.pt",
+          "./results/gecv_main/fold_4/best_model.pt",
+          "./results/gecv_main/fold_5/best_model.pt",
+          "./results/gecv_main/fold_6/best_model.pt",
+          "./results/gecv_main/fold_7/best_model.pt",
+          "./results/gecv_main/fold_8/best_model.pt",
+          "./results/gecv_main/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_no_pose__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_no_pose",
+      "eval_dataset": "gecv",
+      "ablation": "no_pose",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "no_pose",
+        "n_checkpoints": 10,
+        "accuracy_mean": 90.45005798339844,
+        "accuracy_std": 3.5398537879520227,
+        "f1_name": "macro_f1",
+        "f1_mean": 89.01541244158345,
+        "f1_std": 4.341553675155688,
+        "per_class_accuracy_mean": {
+          "positive": 95.5,
+          "neutral": 85.0,
+          "negative": 86.0
+        },
+        "confusion_sum": [
+          [
+            192,
+            8,
+            1
+          ],
+          [
+            7,
+            91,
+            9
+          ],
+          [
+            4,
+            10,
+            86
+          ]
+        ],
+        "recall_pct": [
+          [
+            95.52,
+            3.98,
+            0.5
+          ],
+          [
+            6.54,
+            85.05,
+            8.41
+          ],
+          [
+            4.0,
+            10.0,
+            86.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_no_pose/fold_0/best_model.pt",
+          "./results/gecv_no_pose/fold_1/best_model.pt",
+          "./results/gecv_no_pose/fold_2/best_model.pt",
+          "./results/gecv_no_pose/fold_3/best_model.pt",
+          "./results/gecv_no_pose/fold_4/best_model.pt",
+          "./results/gecv_no_pose/fold_5/best_model.pt",
+          "./results/gecv_no_pose/fold_6/best_model.pt",
+          "./results/gecv_no_pose/fold_7/best_model.pt",
+          "./results/gecv_no_pose/fold_8/best_model.pt",
+          "./results/gecv_no_pose/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_no_pose__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_no_pose",
+      "eval_dataset": "vgaf",
+      "ablation": "no_pose",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "no_pose",
+        "n_checkpoints": 10,
+        "accuracy_mean": 64.03394222259521,
+        "accuracy_std": 1.9135467609371026,
+        "f1_name": "macro_f1",
+        "f1_mean": 63.17393475287625,
+        "f1_std": 2.308353653915404,
+        "per_class_accuracy_mean": {
+          "positive": 69.24,
+          "neutral": 64.39,
+          "negative": 54.95
+        },
+        "confusion_sum": [
+          [
+            2091,
+            670,
+            259
+          ],
+          [
+            675,
+            1803,
+            322
+          ],
+          [
+            306,
+            523,
+            1011
+          ]
+        ],
+        "recall_pct": [
+          [
+            69.24,
+            22.19,
+            8.58
+          ],
+          [
+            24.11,
+            64.39,
+            11.5
+          ],
+          [
+            16.63,
+            28.42,
+            54.95
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_no_pose/fold_0/best_model.pt",
+          "./results/gecv_no_pose/fold_1/best_model.pt",
+          "./results/gecv_no_pose/fold_2/best_model.pt",
+          "./results/gecv_no_pose/fold_3/best_model.pt",
+          "./results/gecv_no_pose/fold_4/best_model.pt",
+          "./results/gecv_no_pose/fold_5/best_model.pt",
+          "./results/gecv_no_pose/fold_6/best_model.pt",
+          "./results/gecv_no_pose/fold_7/best_model.pt",
+          "./results/gecv_no_pose/fold_8/best_model.pt",
+          "./results/gecv_no_pose/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_mean_pool__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_mean_pool",
+      "eval_dataset": "gecv",
+      "ablation": "mean_pool",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "mean_pool",
+        "n_checkpoints": 10,
+        "accuracy_mean": 90.9558641910553,
+        "accuracy_std": 3.0699511212796646,
+        "f1_name": "macro_f1",
+        "f1_mean": 89.62498000821938,
+        "f1_std": 3.955177220539562,
+        "per_class_accuracy_mean": {
+          "positive": 96.0,
+          "neutral": 82.27,
+          "negative": 90.0
+        },
+        "confusion_sum": [
+          [
+            193,
+            4,
+            4
+          ],
+          [
+            8,
+            88,
+            11
+          ],
+          [
+            4,
+            6,
+            90
+          ]
+        ],
+        "recall_pct": [
+          [
+            96.02,
+            1.99,
+            1.99
+          ],
+          [
+            7.48,
+            82.24,
+            10.28
+          ],
+          [
+            4.0,
+            6.0,
+            90.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_mean_pool/fold_0/best_model.pt",
+          "./results/gecv_mean_pool/fold_1/best_model.pt",
+          "./results/gecv_mean_pool/fold_2/best_model.pt",
+          "./results/gecv_mean_pool/fold_3/best_model.pt",
+          "./results/gecv_mean_pool/fold_4/best_model.pt",
+          "./results/gecv_mean_pool/fold_5/best_model.pt",
+          "./results/gecv_mean_pool/fold_6/best_model.pt",
+          "./results/gecv_mean_pool/fold_7/best_model.pt",
+          "./results/gecv_mean_pool/fold_8/best_model.pt",
+          "./results/gecv_mean_pool/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_mean_pool__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_mean_pool",
+      "eval_dataset": "vgaf",
+      "ablation": "mean_pool",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "mean_pool",
+        "n_checkpoints": 10,
+        "accuracy_mean": 64.7389030456543,
+        "accuracy_std": 1.5692424887685241,
+        "f1_name": "macro_f1",
+        "f1_mean": 64.26077055804377,
+        "f1_std": 2.0473112796210993,
+        "per_class_accuracy_mean": {
+          "positive": 70.76,
+          "neutral": 58.39,
+          "negative": 64.51
+        },
+        "confusion_sum": [
+          [
+            2137,
+            498,
+            385
+          ],
+          [
+            793,
+            1635,
+            372
+          ],
+          [
+            346,
+            307,
+            1187
+          ]
+        ],
+        "recall_pct": [
+          [
+            70.76,
+            16.49,
+            12.75
+          ],
+          [
+            28.32,
+            58.39,
+            13.29
+          ],
+          [
+            18.8,
+            16.68,
+            64.51
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_mean_pool/fold_0/best_model.pt",
+          "./results/gecv_mean_pool/fold_1/best_model.pt",
+          "./results/gecv_mean_pool/fold_2/best_model.pt",
+          "./results/gecv_mean_pool/fold_3/best_model.pt",
+          "./results/gecv_mean_pool/fold_4/best_model.pt",
+          "./results/gecv_mean_pool/fold_5/best_model.pt",
+          "./results/gecv_mean_pool/fold_6/best_model.pt",
+          "./results/gecv_mean_pool/fold_7/best_model.pt",
+          "./results/gecv_mean_pool/fold_8/best_model.pt",
+          "./results/gecv_mean_pool/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_gat__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_gat",
+      "eval_dataset": "gecv",
+      "ablation": "gat",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "gat",
+        "n_checkpoints": 10,
+        "accuracy_mean": 91.41985952854156,
+        "accuracy_std": 2.5284922323687424,
+        "f1_name": "macro_f1",
+        "f1_mean": 90.59385386362214,
+        "f1_std": 2.7249462730552754,
+        "per_class_accuracy_mean": {
+          "positive": 96.5,
+          "neutral": 84.91,
+          "negative": 88.0
+        },
+        "confusion_sum": [
+          [
+            194,
+            7,
+            0
+          ],
+          [
+            12,
+            91,
+            4
+          ],
+          [
+            6,
+            6,
+            88
+          ]
+        ],
+        "recall_pct": [
+          [
+            96.52,
+            3.48,
+            0.0
+          ],
+          [
+            11.21,
+            85.05,
+            3.74
+          ],
+          [
+            6.0,
+            6.0,
+            88.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_gat/fold_0/best_model.pt",
+          "./results/gecv_gat/fold_1/best_model.pt",
+          "./results/gecv_gat/fold_2/best_model.pt",
+          "./results/gecv_gat/fold_3/best_model.pt",
+          "./results/gecv_gat/fold_4/best_model.pt",
+          "./results/gecv_gat/fold_5/best_model.pt",
+          "./results/gecv_gat/fold_6/best_model.pt",
+          "./results/gecv_gat/fold_7/best_model.pt",
+          "./results/gecv_gat/fold_8/best_model.pt",
+          "./results/gecv_gat/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_gat__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_gat",
+      "eval_dataset": "vgaf",
+      "ablation": "gat",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "gat",
+        "n_checkpoints": 10,
+        "accuracy_mean": 62.454308271408074,
+        "accuracy_std": 1.8629565243619368,
+        "f1_name": "macro_f1",
+        "f1_mean": 60.99310113593936,
+        "f1_std": 3.2677141403972874,
+        "per_class_accuracy_mean": {
+          "positive": 69.5,
+          "neutral": 63.5,
+          "negative": 49.29
+        },
+        "confusion_sum": [
+          [
+            2099,
+            637,
+            284
+          ],
+          [
+            782,
+            1778,
+            240
+          ],
+          [
+            443,
+            490,
+            907
+          ]
+        ],
+        "recall_pct": [
+          [
+            69.5,
+            21.09,
+            9.4
+          ],
+          [
+            27.93,
+            63.5,
+            8.57
+          ],
+          [
+            24.08,
+            26.63,
+            49.29
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_gat/fold_0/best_model.pt",
+          "./results/gecv_gat/fold_1/best_model.pt",
+          "./results/gecv_gat/fold_2/best_model.pt",
+          "./results/gecv_gat/fold_3/best_model.pt",
+          "./results/gecv_gat/fold_4/best_model.pt",
+          "./results/gecv_gat/fold_5/best_model.pt",
+          "./results/gecv_gat/fold_6/best_model.pt",
+          "./results/gecv_gat/fold_7/best_model.pt",
+          "./results/gecv_gat/fold_8/best_model.pt",
+          "./results/gecv_gat/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_holistic__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_holistic",
+      "eval_dataset": "gecv",
+      "ablation": "holistic",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "holistic",
+        "n_checkpoints": 10,
+        "accuracy_mean": 90.95005750656128,
+        "accuracy_std": 3.4395514072486493,
+        "f1_name": "macro_f1",
+        "f1_mean": 89.9189223857531,
+        "f1_std": 3.829445292198759,
+        "per_class_accuracy_mean": {
+          "positive": 95.5,
+          "neutral": 84.18,
+          "negative": 89.0
+        },
+        "confusion_sum": [
+          [
+            192,
+            7,
+            2
+          ],
+          [
+            10,
+            90,
+            7
+          ],
+          [
+            5,
+            6,
+            89
+          ]
+        ],
+        "recall_pct": [
+          [
+            95.52,
+            3.48,
+            1.0
+          ],
+          [
+            9.35,
+            84.11,
+            6.54
+          ],
+          [
+            5.0,
+            6.0,
+            89.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_holistic/fold_0/best_model.pt",
+          "./results/gecv_holistic/fold_1/best_model.pt",
+          "./results/gecv_holistic/fold_2/best_model.pt",
+          "./results/gecv_holistic/fold_3/best_model.pt",
+          "./results/gecv_holistic/fold_4/best_model.pt",
+          "./results/gecv_holistic/fold_5/best_model.pt",
+          "./results/gecv_holistic/fold_6/best_model.pt",
+          "./results/gecv_holistic/fold_7/best_model.pt",
+          "./results/gecv_holistic/fold_8/best_model.pt",
+          "./results/gecv_holistic/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_holistic__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_holistic",
+      "eval_dataset": "vgaf",
+      "ablation": "holistic",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "holistic",
+        "n_checkpoints": 10,
+        "accuracy_mean": 62.715405225753784,
+        "accuracy_std": 2.3831414214827635,
+        "f1_name": "macro_f1",
+        "f1_mean": 62.012362937772345,
+        "f1_std": 2.5817244506097703,
+        "per_class_accuracy_mean": {
+          "positive": 61.89,
+          "neutral": 67.5,
+          "negative": 56.79
+        },
+        "confusion_sum": [
+          [
+            1869,
+            776,
+            375
+          ],
+          [
+            560,
+            1890,
+            350
+          ],
+          [
+            293,
+            502,
+            1045
+          ]
+        ],
+        "recall_pct": [
+          [
+            61.89,
+            25.7,
+            12.42
+          ],
+          [
+            20.0,
+            67.5,
+            12.5
+          ],
+          [
+            15.92,
+            27.28,
+            56.79
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_holistic/fold_0/best_model.pt",
+          "./results/gecv_holistic/fold_1/best_model.pt",
+          "./results/gecv_holistic/fold_2/best_model.pt",
+          "./results/gecv_holistic/fold_3/best_model.pt",
+          "./results/gecv_holistic/fold_4/best_model.pt",
+          "./results/gecv_holistic/fold_5/best_model.pt",
+          "./results/gecv_holistic/fold_6/best_model.pt",
+          "./results/gecv_holistic/fold_7/best_model.pt",
+          "./results/gecv_holistic/fold_8/best_model.pt",
+          "./results/gecv_holistic/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_hypergraph_temporal__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_hypergraph_temporal",
+      "eval_dataset": "gecv",
+      "ablation": "hypergraph_temporal",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "hypergraph_temporal",
+        "n_checkpoints": 10,
+        "accuracy_mean": 93.40127766132355,
+        "accuracy_std": 2.6449541879948484,
+        "f1_name": "macro_f1",
+        "f1_mean": 92.5450743580693,
+        "f1_std": 3.1439519714429003,
+        "per_class_accuracy_mean": {
+          "positive": 96.5,
+          "neutral": 89.64,
+          "negative": 91.0
+        },
+        "confusion_sum": [
+          [
+            194,
+            6,
+            1
+          ],
+          [
+            5,
+            96,
+            6
+          ],
+          [
+            4,
+            5,
+            91
+          ]
+        ],
+        "recall_pct": [
+          [
+            96.52,
+            2.99,
+            0.5
+          ],
+          [
+            4.67,
+            89.72,
+            5.61
+          ],
+          [
+            4.0,
+            5.0,
+            91.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_hypergraph_temporal/fold_0/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_1/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_2/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_3/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_4/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_5/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_6/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_7/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_8/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_hypergraph_temporal__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_hypergraph_temporal",
+      "eval_dataset": "vgaf",
+      "ablation": "hypergraph_temporal",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "hypergraph_temporal",
+        "n_checkpoints": 10,
+        "accuracy_mean": 58.47258508205414,
+        "accuracy_std": 1.750953002661655,
+        "f1_name": "macro_f1",
+        "f1_mean": 57.42578947912615,
+        "f1_std": 1.8408150012229427,
+        "per_class_accuracy_mean": {
+          "positive": 60.93,
+          "neutral": 61.39,
+          "negative": 50.0
+        },
+        "confusion_sum": [
+          [
+            1840,
+            727,
+            453
+          ],
+          [
+            686,
+            1719,
+            395
+          ],
+          [
+            357,
+            563,
+            920
+          ]
+        ],
+        "recall_pct": [
+          [
+            60.93,
+            24.07,
+            15.0
+          ],
+          [
+            24.5,
+            61.39,
+            14.11
+          ],
+          [
+            19.4,
+            30.6,
+            50.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_hypergraph_temporal/fold_0/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_1/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_2/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_3/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_4/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_5/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_6/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_7/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_8/best_model.pt",
+          "./results/gecv_hypergraph_temporal/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_no_pose_temporal__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_no_pose_temporal",
+      "eval_dataset": "gecv",
+      "ablation": "no_pose_temporal",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "no_pose_temporal",
+        "n_checkpoints": 10,
+        "accuracy_mean": 92.89547026157379,
+        "accuracy_std": 3.3838263087191907,
+        "f1_name": "macro_f1",
+        "f1_mean": 91.85746371893606,
+        "f1_std": 4.060791691817968,
+        "per_class_accuracy_mean": {
+          "positive": 96.5,
+          "neutral": 89.64,
+          "negative": 89.0
+        },
+        "confusion_sum": [
+          [
+            194,
+            6,
+            1
+          ],
+          [
+            5,
+            96,
+            6
+          ],
+          [
+            3,
+            8,
+            89
+          ]
+        ],
+        "recall_pct": [
+          [
+            96.52,
+            2.99,
+            0.5
+          ],
+          [
+            4.67,
+            89.72,
+            5.61
+          ],
+          [
+            3.0,
+            8.0,
+            89.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_no_pose_temporal/fold_0/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_1/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_2/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_3/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_4/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_5/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_6/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_7/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_8/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_no_pose_temporal__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_no_pose_temporal",
+      "eval_dataset": "vgaf",
+      "ablation": "no_pose_temporal",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "no_pose_temporal",
+        "n_checkpoints": 10,
+        "accuracy_mean": 65.0,
+        "accuracy_std": 2.2058030361015946,
+        "f1_name": "macro_f1",
+        "f1_mean": 63.43916952131193,
+        "f1_std": 4.221214340331228,
+        "per_class_accuracy_mean": {
+          "positive": 70.83,
+          "neutral": 67.39,
+          "negative": 51.79
+        },
+        "confusion_sum": [
+          [
+            2139,
+            654,
+            227
+          ],
+          [
+            647,
+            1887,
+            266
+          ],
+          [
+            393,
+            494,
+            953
+          ]
+        ],
+        "recall_pct": [
+          [
+            70.83,
+            21.66,
+            7.52
+          ],
+          [
+            23.11,
+            67.39,
+            9.5
+          ],
+          [
+            21.36,
+            26.85,
+            51.79
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_no_pose_temporal/fold_0/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_1/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_2/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_3/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_4/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_5/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_6/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_7/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_8/best_model.pt",
+          "./results/gecv_no_pose_temporal/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_mean_pool_temporal__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_mean_pool_temporal",
+      "eval_dataset": "gecv",
+      "ablation": "mean_pool_temporal",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "mean_pool_temporal",
+        "n_checkpoints": 10,
+        "accuracy_mean": 92.90156722068787,
+        "accuracy_std": 2.774263930631928,
+        "f1_name": "macro_f1",
+        "f1_mean": 91.93354025426575,
+        "f1_std": 3.4569466406697495,
+        "per_class_accuracy_mean": {
+          "positive": 97.0,
+          "neutral": 88.82,
+          "negative": 89.0
+        },
+        "confusion_sum": [
+          [
+            195,
+            4,
+            2
+          ],
+          [
+            6,
+            95,
+            6
+          ],
+          [
+            5,
+            6,
+            89
+          ]
+        ],
+        "recall_pct": [
+          [
+            97.01,
+            1.99,
+            1.0
+          ],
+          [
+            5.61,
+            88.79,
+            5.61
+          ],
+          [
+            5.0,
+            6.0,
+            89.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_mean_pool_temporal/fold_0/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_1/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_2/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_3/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_4/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_5/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_6/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_7/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_8/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_mean_pool_temporal__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_mean_pool_temporal",
+      "eval_dataset": "vgaf",
+      "ablation": "mean_pool_temporal",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "mean_pool_temporal",
+        "n_checkpoints": 10,
+        "accuracy_mean": 63.81201088428497,
+        "accuracy_std": 3.2968544143051948,
+        "f1_name": "macro_f1",
+        "f1_mean": 62.73814617545854,
+        "f1_std": 4.48865888940573,
+        "per_class_accuracy_mean": {
+          "positive": 67.22,
+          "neutral": 66.11,
+          "negative": 54.73
+        },
+        "confusion_sum": [
+          [
+            2030,
+            653,
+            337
+          ],
+          [
+            653,
+            1851,
+            296
+          ],
+          [
+            436,
+            397,
+            1007
+          ]
+        ],
+        "recall_pct": [
+          [
+            67.22,
+            21.62,
+            11.16
+          ],
+          [
+            23.32,
+            66.11,
+            10.57
+          ],
+          [
+            23.7,
+            21.58,
+            54.73
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_mean_pool_temporal/fold_0/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_1/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_2/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_3/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_4/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_5/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_6/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_7/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_8/best_model.pt",
+          "./results/gecv_mean_pool_temporal/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_gat_temporal__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_gat_temporal",
+      "eval_dataset": "gecv",
+      "ablation": "gat_temporal",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "gat_temporal",
+        "n_checkpoints": 10,
+        "accuracy_mean": 93.14547002315521,
+        "accuracy_std": 1.4338647601554568,
+        "f1_name": "macro_f1",
+        "f1_mean": 92.13472546913957,
+        "f1_std": 1.761679250928724,
+        "per_class_accuracy_mean": {
+          "positive": 97.0,
+          "neutral": 89.64,
+          "negative": 89.0
+        },
+        "confusion_sum": [
+          [
+            195,
+            5,
+            1
+          ],
+          [
+            5,
+            96,
+            6
+          ],
+          [
+            4,
+            7,
+            89
+          ]
+        ],
+        "recall_pct": [
+          [
+            97.01,
+            2.49,
+            0.5
+          ],
+          [
+            4.67,
+            89.72,
+            5.61
+          ],
+          [
+            4.0,
+            7.0,
+            89.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_gat_temporal/fold_0/best_model.pt",
+          "./results/gecv_gat_temporal/fold_1/best_model.pt",
+          "./results/gecv_gat_temporal/fold_2/best_model.pt",
+          "./results/gecv_gat_temporal/fold_3/best_model.pt",
+          "./results/gecv_gat_temporal/fold_4/best_model.pt",
+          "./results/gecv_gat_temporal/fold_5/best_model.pt",
+          "./results/gecv_gat_temporal/fold_6/best_model.pt",
+          "./results/gecv_gat_temporal/fold_7/best_model.pt",
+          "./results/gecv_gat_temporal/fold_8/best_model.pt",
+          "./results/gecv_gat_temporal/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_gat_temporal__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_gat_temporal",
+      "eval_dataset": "vgaf",
+      "ablation": "gat_temporal",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "gat_temporal",
+        "n_checkpoints": 10,
+        "accuracy_mean": 61.90600574016572,
+        "accuracy_std": 1.8708070674829818,
+        "f1_name": "macro_f1",
+        "f1_mean": 59.498736837572686,
+        "f1_std": 3.212743710020185,
+        "per_class_accuracy_mean": {
+          "positive": 74.21,
+          "neutral": 62.43,
+          "negative": 40.92
+        },
+        "confusion_sum": [
+          [
+            2241,
+            561,
+            218
+          ],
+          [
+            845,
+            1748,
+            207
+          ],
+          [
+            556,
+            531,
+            753
+          ]
+        ],
+        "recall_pct": [
+          [
+            74.21,
+            18.58,
+            7.22
+          ],
+          [
+            30.18,
+            62.43,
+            7.39
+          ],
+          [
+            30.22,
+            28.86,
+            40.92
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_gat_temporal/fold_0/best_model.pt",
+          "./results/gecv_gat_temporal/fold_1/best_model.pt",
+          "./results/gecv_gat_temporal/fold_2/best_model.pt",
+          "./results/gecv_gat_temporal/fold_3/best_model.pt",
+          "./results/gecv_gat_temporal/fold_4/best_model.pt",
+          "./results/gecv_gat_temporal/fold_5/best_model.pt",
+          "./results/gecv_gat_temporal/fold_6/best_model.pt",
+          "./results/gecv_gat_temporal/fold_7/best_model.pt",
+          "./results/gecv_gat_temporal/fold_8/best_model.pt",
+          "./results/gecv_gat_temporal/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_holistic_temporal__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_holistic_temporal",
+      "eval_dataset": "gecv",
+      "ablation": "holistic_temporal",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "holistic_temporal",
+        "n_checkpoints": 10,
+        "accuracy_mean": 93.65737557411194,
+        "accuracy_std": 3.6282206301966253,
+        "f1_name": "macro_f1",
+        "f1_mean": 92.76301785802292,
+        "f1_std": 4.179455238094501,
+        "per_class_accuracy_mean": {
+          "positive": 97.5,
+          "neutral": 89.82,
+          "negative": 90.0
+        },
+        "confusion_sum": [
+          [
+            196,
+            4,
+            1
+          ],
+          [
+            5,
+            96,
+            6
+          ],
+          [
+            5,
+            5,
+            90
+          ]
+        ],
+        "recall_pct": [
+          [
+            97.51,
+            1.99,
+            0.5
+          ],
+          [
+            4.67,
+            89.72,
+            5.61
+          ],
+          [
+            5.0,
+            5.0,
+            90.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_holistic_temporal/fold_0/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_1/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_2/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_3/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_4/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_5/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_6/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_7/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_8/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_holistic_temporal__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_holistic_temporal",
+      "eval_dataset": "vgaf",
+      "ablation": "holistic_temporal",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "holistic_temporal",
+        "n_checkpoints": 10,
+        "accuracy_mean": 63.31592619419097,
+        "accuracy_std": 1.3999748388633555,
+        "f1_name": "macro_f1",
+        "f1_mean": 62.52281232429444,
+        "f1_std": 1.60725346673016,
+        "per_class_accuracy_mean": {
+          "positive": 65.83,
+          "neutral": 66.18,
+          "negative": 54.84
+        },
+        "confusion_sum": [
+          [
+            1988,
+            700,
+            332
+          ],
+          [
+            636,
+            1853,
+            311
+          ],
+          [
+            341,
+            490,
+            1009
+          ]
+        ],
+        "recall_pct": [
+          [
+            65.83,
+            23.18,
+            10.99
+          ],
+          [
+            22.71,
+            66.18,
+            11.11
+          ],
+          [
+            18.53,
+            26.63,
+            54.84
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_holistic_temporal/fold_0/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_1/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_2/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_3/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_4/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_5/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_6/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_7/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_8/best_model.pt",
+          "./results/gecv_holistic_temporal/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_visual_only__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_visual_only",
+      "eval_dataset": "gecv",
+      "ablation": "visual_only",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "visual_only",
+        "n_checkpoints": 10,
+        "accuracy_mean": 90.69396018981934,
+        "accuracy_std": 3.5755689157498223,
+        "f1_name": "macro_f1",
+        "f1_mean": 89.3460687219802,
+        "f1_std": 3.8679022336959648,
+        "per_class_accuracy_mean": {
+          "positive": 93.52,
+          "neutral": 81.18,
+          "negative": 95.0
+        },
+        "confusion_sum": [
+          [
+            188,
+            9,
+            4
+          ],
+          [
+            5,
+            87,
+            15
+          ],
+          [
+            1,
+            4,
+            95
+          ]
+        ],
+        "recall_pct": [
+          [
+            93.53,
+            4.48,
+            1.99
+          ],
+          [
+            4.67,
+            81.31,
+            14.02
+          ],
+          [
+            1.0,
+            4.0,
+            95.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_visual_only/fold_0/best_model.pt",
+          "./results/gecv_visual_only/fold_1/best_model.pt",
+          "./results/gecv_visual_only/fold_2/best_model.pt",
+          "./results/gecv_visual_only/fold_3/best_model.pt",
+          "./results/gecv_visual_only/fold_4/best_model.pt",
+          "./results/gecv_visual_only/fold_5/best_model.pt",
+          "./results/gecv_visual_only/fold_6/best_model.pt",
+          "./results/gecv_visual_only/fold_7/best_model.pt",
+          "./results/gecv_visual_only/fold_8/best_model.pt",
+          "./results/gecv_visual_only/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_visual_only__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_visual_only",
+      "eval_dataset": "vgaf",
+      "ablation": "visual_only",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "visual_only",
+        "n_checkpoints": 10,
+        "accuracy_mean": 56.44908547401428,
+        "accuracy_std": 1.1473414048735058,
+        "f1_name": "macro_f1",
+        "f1_mean": 56.385698207431176,
+        "f1_std": 1.1605148733572048,
+        "per_class_accuracy_mean": {
+          "positive": 47.85,
+          "neutral": 56.64,
+          "negative": 70.27
+        },
+        "confusion_sum": [
+          [
+            1445,
+            714,
+            861
+          ],
+          [
+            560,
+            1586,
+            654
+          ],
+          [
+            276,
+            271,
+            1293
+          ]
+        ],
+        "recall_pct": [
+          [
+            47.85,
+            23.64,
+            28.51
+          ],
+          [
+            20.0,
+            56.64,
+            23.36
+          ],
+          [
+            15.0,
+            14.73,
+            70.27
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_visual_only/fold_0/best_model.pt",
+          "./results/gecv_visual_only/fold_1/best_model.pt",
+          "./results/gecv_visual_only/fold_2/best_model.pt",
+          "./results/gecv_visual_only/fold_3/best_model.pt",
+          "./results/gecv_visual_only/fold_4/best_model.pt",
+          "./results/gecv_visual_only/fold_5/best_model.pt",
+          "./results/gecv_visual_only/fold_6/best_model.pt",
+          "./results/gecv_visual_only/fold_7/best_model.pt",
+          "./results/gecv_visual_only/fold_8/best_model.pt",
+          "./results/gecv_visual_only/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_audio_only__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_audio_only",
+      "eval_dataset": "gecv",
+      "ablation": "audio_only",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "audio_only",
+        "n_checkpoints": 10,
+        "accuracy_mean": 61.06736391782761,
+        "accuracy_std": 7.031387038221378,
+        "f1_name": "macro_f1",
+        "f1_mean": 59.167226007096154,
+        "f1_std": 6.835880021822641,
+        "per_class_accuracy_mean": {
+          "positive": 63.69,
+          "neutral": 67.36,
+          "negative": 49.0
+        },
+        "confusion_sum": [
+          [
+            128,
+            29,
+            44
+          ],
+          [
+            29,
+            72,
+            6
+          ],
+          [
+            33,
+            18,
+            49
+          ]
+        ],
+        "recall_pct": [
+          [
+            63.68,
+            14.43,
+            21.89
+          ],
+          [
+            27.1,
+            67.29,
+            5.61
+          ],
+          [
+            33.0,
+            18.0,
+            49.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_audio_only/fold_0/best_model.pt",
+          "./results/gecv_audio_only/fold_1/best_model.pt",
+          "./results/gecv_audio_only/fold_2/best_model.pt",
+          "./results/gecv_audio_only/fold_3/best_model.pt",
+          "./results/gecv_audio_only/fold_4/best_model.pt",
+          "./results/gecv_audio_only/fold_5/best_model.pt",
+          "./results/gecv_audio_only/fold_6/best_model.pt",
+          "./results/gecv_audio_only/fold_7/best_model.pt",
+          "./results/gecv_audio_only/fold_8/best_model.pt",
+          "./results/gecv_audio_only/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_audio_only__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_audio_only",
+      "eval_dataset": "vgaf",
+      "ablation": "audio_only",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "audio_only",
+        "n_checkpoints": 10,
+        "accuracy_mean": 42.96344667673111,
+        "accuracy_std": 3.399499077665195,
+        "f1_name": "macro_f1",
+        "f1_mean": 40.80796008845827,
+        "f1_std": 2.729834862283933,
+        "per_class_accuracy_mean": {
+          "positive": 44.37,
+          "neutral": 52.93,
+          "negative": 25.49
+        },
+        "confusion_sum": [
+          [
+            1340,
+            598,
+            1082
+          ],
+          [
+            823,
+            1482,
+            495
+          ],
+          [
+            941,
+            430,
+            469
+          ]
+        ],
+        "recall_pct": [
+          [
+            44.37,
+            19.8,
+            35.83
+          ],
+          [
+            29.39,
+            52.93,
+            17.68
+          ],
+          [
+            51.14,
+            23.37,
+            25.49
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_audio_only/fold_0/best_model.pt",
+          "./results/gecv_audio_only/fold_1/best_model.pt",
+          "./results/gecv_audio_only/fold_2/best_model.pt",
+          "./results/gecv_audio_only/fold_3/best_model.pt",
+          "./results/gecv_audio_only/fold_4/best_model.pt",
+          "./results/gecv_audio_only/fold_5/best_model.pt",
+          "./results/gecv_audio_only/fold_6/best_model.pt",
+          "./results/gecv_audio_only/fold_7/best_model.pt",
+          "./results/gecv_audio_only/fold_8/best_model.pt",
+          "./results/gecv_audio_only/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_scene_only__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_scene_only",
+      "eval_dataset": "gecv",
+      "ablation": "scene_only",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "scene_only",
+        "n_checkpoints": 10,
+        "accuracy_mean": 93.37165951728821,
+        "accuracy_std": 3.336957956876277,
+        "f1_name": "macro_f1",
+        "f1_mean": 92.55095385821545,
+        "f1_std": 3.844943715547972,
+        "per_class_accuracy_mean": {
+          "positive": 95.0,
+          "neutral": 87.73,
+          "negative": 96.0
+        },
+        "confusion_sum": [
+          [
+            191,
+            5,
+            5
+          ],
+          [
+            1,
+            94,
+            12
+          ],
+          [
+            4,
+            0,
+            96
+          ]
+        ],
+        "recall_pct": [
+          [
+            95.02,
+            2.49,
+            2.49
+          ],
+          [
+            0.93,
+            87.85,
+            11.21
+          ],
+          [
+            4.0,
+            0.0,
+            96.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_scene_only/fold_0/best_model.pt",
+          "./results/gecv_scene_only/fold_1/best_model.pt",
+          "./results/gecv_scene_only/fold_2/best_model.pt",
+          "./results/gecv_scene_only/fold_3/best_model.pt",
+          "./results/gecv_scene_only/fold_4/best_model.pt",
+          "./results/gecv_scene_only/fold_5/best_model.pt",
+          "./results/gecv_scene_only/fold_6/best_model.pt",
+          "./results/gecv_scene_only/fold_7/best_model.pt",
+          "./results/gecv_scene_only/fold_8/best_model.pt",
+          "./results/gecv_scene_only/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_scene_only__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_scene_only",
+      "eval_dataset": "vgaf",
+      "ablation": "scene_only",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "scene_only",
+        "n_checkpoints": 10,
+        "accuracy_mean": 55.718015432357795,
+        "accuracy_std": 0.8831090940581954,
+        "f1_name": "macro_f1",
+        "f1_mean": 54.224621624556704,
+        "f1_std": 1.5000593123185408,
+        "per_class_accuracy_mean": {
+          "positive": 68.48,
+          "neutral": 52.11,
+          "negative": 40.27
+        },
+        "confusion_sum": [
+          [
+            2068,
+            789,
+            163
+          ],
+          [
+            1074,
+            1459,
+            267
+          ],
+          [
+            467,
+            632,
+            741
+          ]
+        ],
+        "recall_pct": [
+          [
+            68.48,
+            26.13,
+            5.4
+          ],
+          [
+            38.36,
+            52.11,
+            9.54
+          ],
+          [
+            25.38,
+            34.35,
+            40.27
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_scene_only/fold_0/best_model.pt",
+          "./results/gecv_scene_only/fold_1/best_model.pt",
+          "./results/gecv_scene_only/fold_2/best_model.pt",
+          "./results/gecv_scene_only/fold_3/best_model.pt",
+          "./results/gecv_scene_only/fold_4/best_model.pt",
+          "./results/gecv_scene_only/fold_5/best_model.pt",
+          "./results/gecv_scene_only/fold_6/best_model.pt",
+          "./results/gecv_scene_only/fold_7/best_model.pt",
+          "./results/gecv_scene_only/fold_8/best_model.pt",
+          "./results/gecv_scene_only/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_temporal_only__indist",
+      "returncode": 0,
+      "run_dir": "./results/gecv_temporal_only",
+      "eval_dataset": "gecv",
+      "ablation": "temporal_only",
+      "transfer": false,
+      "metrics": {
+        "eval": "gecv",
+        "config": "temporal_only",
+        "n_checkpoints": 10,
+        "accuracy_mean": 91.414053440094,
+        "accuracy_std": 3.535936490836188,
+        "f1_name": "macro_f1",
+        "f1_mean": 90.3297016975088,
+        "f1_std": 3.8443621398520853,
+        "per_class_accuracy_mean": {
+          "positive": 93.0,
+          "neutral": 90.64,
+          "negative": 89.0
+        },
+        "confusion_sum": [
+          [
+            187,
+            8,
+            6
+          ],
+          [
+            1,
+            97,
+            9
+          ],
+          [
+            4,
+            7,
+            89
+          ]
+        ],
+        "recall_pct": [
+          [
+            93.03,
+            3.98,
+            2.99
+          ],
+          [
+            0.93,
+            90.65,
+            8.41
+          ],
+          [
+            4.0,
+            7.0,
+            89.0
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_temporal_only/fold_0/best_model.pt",
+          "./results/gecv_temporal_only/fold_1/best_model.pt",
+          "./results/gecv_temporal_only/fold_2/best_model.pt",
+          "./results/gecv_temporal_only/fold_3/best_model.pt",
+          "./results/gecv_temporal_only/fold_4/best_model.pt",
+          "./results/gecv_temporal_only/fold_5/best_model.pt",
+          "./results/gecv_temporal_only/fold_6/best_model.pt",
+          "./results/gecv_temporal_only/fold_7/best_model.pt",
+          "./results/gecv_temporal_only/fold_8/best_model.pt",
+          "./results/gecv_temporal_only/fold_9/best_model.pt"
+        ]
+      }
+    },
+    {
+      "name": "gecv_temporal_only__transfer_vgaf",
+      "returncode": 0,
+      "run_dir": "./results/gecv_temporal_only",
+      "eval_dataset": "vgaf",
+      "ablation": "temporal_only",
+      "transfer": true,
+      "metrics": {
+        "eval": "transfer_vgaf",
+        "config": "temporal_only",
+        "n_checkpoints": 10,
+        "accuracy_mean": 55.874674320220954,
+        "accuracy_std": 0.8873445608305552,
+        "f1_name": "macro_f1",
+        "f1_mean": 54.25200528186345,
+        "f1_std": 0.9990326533217136,
+        "per_class_accuracy_mean": {
+          "positive": 46.29,
+          "neutral": 72.86,
+          "negative": 45.76
+        },
+        "confusion_sum": [
+          [
+            1398,
+            1008,
+            614
+          ],
+          [
+            393,
+            2040,
+            367
+          ],
+          [
+            459,
+            539,
+            842
+          ]
+        ],
+        "recall_pct": [
+          [
+            46.29,
+            33.38,
+            20.33
+          ],
+          [
+            14.04,
+            72.86,
+            13.11
+          ],
+          [
+            24.95,
+            29.29,
+            45.76
+          ]
+        ],
+        "checkpoints": [
+          "./results/gecv_temporal_only/fold_0/best_model.pt",
+          "./results/gecv_temporal_only/fold_1/best_model.pt",
+          "./results/gecv_temporal_only/fold_2/best_model.pt",
+          "./results/gecv_temporal_only/fold_3/best_model.pt",
+          "./results/gecv_temporal_only/fold_4/best_model.pt",
+          "./results/gecv_temporal_only/fold_5/best_model.pt",
+          "./results/gecv_temporal_only/fold_6/best_model.pt",
+          "./results/gecv_temporal_only/fold_7/best_model.pt",
+          "./results/gecv_temporal_only/fold_8/best_model.pt",
+          "./results/gecv_temporal_only/fold_9/best_model.pt"
+        ]
+      }
+    }
+  ],
+  "skipped": []
+}

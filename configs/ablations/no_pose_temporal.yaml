@@ -1,0 +1,8 @@
+# configs/ablations/no_pose_temporal.yaml
+model:
+  visual:
+    use_pose: false
+  temporal:
+    enabled: true
+train:
+  active_branches: [visual, audio, scene, temporal]

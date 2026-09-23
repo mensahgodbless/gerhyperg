@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+
+# Model weights and checkpoints (distributed separately)
+weights/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# Feature caches and datasets (not redistributable)
+*.h5
+*.hdf5
+
+# Run outputs
+logs/
+figures/
+wandb/
+*.log
+
+# Editors
+.vscode/
+.idea/

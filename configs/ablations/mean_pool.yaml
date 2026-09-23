@@ -1,0 +1,6 @@
+# Ablation: replace SoftHypergraphEncoder with simple masked mean over
+# persons. Keeps temporal attention pool. Tests whether the hypergraph's
+# structured aggregation matters versus naive person averaging.
+model:
+  visual:
+    backbone: mean_pool

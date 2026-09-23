@@ -1,0 +1,62 @@
+project:
+  name: gerhyperg
+  seed: 42
+  device: cuda:1
+data:
+  max_persons: 30
+  face_size: 260
+  body_size: 224
+  num_workers: 4
+  dataset: gecv
+  data_root: /path/to/datasets/GECV/GECV
+  feature_cache_dir: /path/to/datasets/gerhyperg_features/gecv
+  video_root: /path/to/datasets/GECV/GECV
+  cache_root: /path/to/datasets/gerhyperg_features/gecv
+  protocol: cv10
+  num_folds: 10
+  fold_seed: 42
+model:
+  d_model: 256
+  num_classes: 3
+  dropout: 0.4
+  visual:
+    backbone: hypergraph
+    use_pose: false
+    num_prototypes: 2
+    gat_heads: 4
+    per_person_dim: 2048
+  audio:
+    audio_dim: 1024
+  scene:
+    scene_dim: 512
+  temporal:
+    enabled: false
+    temporal_dim: 768
+  fusion:
+    per_class: false
+  backbone:
+    face_model: enet_b2_8
+    body_model: ViT-B-16
+    audio_dim: 1024
+    text_dim: 0
+train:
+  optimizer: adamw
+  lr: 3.0e-05
+  weight_decay: 0.01
+  scheduler: cosine
+  warmup_epochs: 2
+  batch_size: 32
+  epochs: 50
+  patience: 25
+  grad_clip: 1.0
+  amp: true
+  feature_dropout: 0.1
+  loss:
+    use_class_weights: true
+    aux_loss_weight: 0.3
+  branch_dropout: 0.2
+  seeds:
+  - 42
+eval:
+  kfold: 10
+  kfold_seed: 42

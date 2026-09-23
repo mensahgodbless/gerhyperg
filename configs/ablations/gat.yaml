@@ -1,0 +1,7 @@
+# Ablation: replace SoftHypergraphEncoder with multi-head GAT (pairwise
+# attention). Tests whether higher-order modelling beats pairwise.
+# Also serves as the Wang ICPR 2024 baseline reimplementation.
+model:
+  visual:
+    backbone: gat
+    gat_heads: 4

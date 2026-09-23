@@ -1,0 +1,73 @@
+# Global defaults — dataset-agnostic. Layered under vgaf.yaml / gecv.yaml
+# and any ablations/*.yaml selected on the CLI.
+#
+# Rename note: this file was previously default.yaml. If anything in the
+# codebase still loads "default.yaml", the load_config helper in
+# training/train_utils.py tries both names.
+
+project:
+  name: gerhyperg
+  seed: 42                  # default training seed; overridden by --seed
+  device: cuda:0
+
+# Data defaults (extractor-relevant keys live here; per-dataset configs
+# override paths and protocol).
+data:
+  max_persons: 20           # N_max canonical slot count
+  face_size: 224
+  body_size: 224
+  num_workers: 4
+
+# Model architecture defaults.
+model:
+  d_model: 256    #256
+  num_classes: 3
+  dropout: 0.4    #0.1
+
+  visual:
+    backbone: hypergraph    # one of: hypergraph | gat | mean_pool | holistic
+    use_pose: true          # if false, slice off the last 64 pose dims at projector input
+    num_prototypes: 2 #4       # M, hypergraph-only
+    gat_heads: 4            # GAT-only
+    per_person_dim: 2048    # face1408 + body512 + bbox64 + pose64
+
+  audio:
+    audio_dim: 1024
+
+  scene:
+    scene_dim: 512
+  
+  temporal:
+    enabled: false           # default off → backward compatible
+    temporal_dim: 768        # TimeSformer-base hidden size
+
+  fusion:
+    per_class: false        # if true, learns [3 branches, 3 classes] weights
+
+  # Feature-extraction backbones (used by the extractor scripts).
+  backbone:
+    face_model: enet_b2_8
+    body_model: ViT-B-16
+
+# Training defaults.
+train:
+  optimizer: adamw
+  lr: 3.0e-5  #5.0e-5
+  weight_decay: 1.0e-2  #1.0e-4
+  scheduler: cosine
+  warmup_epochs: 2
+  batch_size: 32
+  epochs: 50
+  patience: 10   #10           # early-stopping patience on dev/val accuracy
+  grad_clip: 1.0
+  amp: true                 # mixed-precision
+  feature_dropout: 0.1
+
+  loss:
+    use_class_weights: true
+    aux_loss_weight: 0.3    # α applied to each per-branch CE
+
+  # Branch dropout at training time (separate from architecture dropout).
+  # Probability of zeroing each branch's logits per minibatch — encourages
+  # the fusion to not over-rely on any one branch. Set to 0 to disable.
+  branch_dropout: 0.2   #0.0

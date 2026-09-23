@@ -1,0 +1,57 @@
+# ============================================================================
+# VGAF Dataset Configuration
+# ============================================================================
+# Overrides default.yaml for the VGAF (Video-level Group Affect) dataset.
+# Emotion classes: positive (0), neutral (1), negative (2)
+#
+# Clips are 5-second segments from source videos, merged into source-level
+# videos by merge_vgaf_clips.py. Feature cache contains per-source HDF5.
+#
+# Protocol A: single-clip classification (K=1, supervised)
+# Protocol B: concatenated source videos with ordered labels (K≥2, weak)
+# ============================================================================
+
+model:
+  num_classes: 3
+  backbone:
+    audio_dim: 1024         # HuBERT-Large audio features
+    text_dim: 0           # No text features for VGAF
+
+data:
+  dataset: vgaf
+  data_root: "/path/to/datasets/VGAFDATA/VGAF"
+  feature_cache_dir: "/path/to/datasets/gerhyperg_features/vgaf"
+  fps: 3
+  max_persons: 20                     # Variable group sizes in-the-wild
+  max_frames: 600                     # ~200s at 3fps, covers most sources
+  protocol: "A"                       # "A" for single-clip, "B" for concatenated
+  face_size: 260
+  body_size: 224
+
+  video_root: /path/to/datasets/VGAFDATA/VGAF
+  cache_root: /path/to/datasets/gerhyperg_features/vgaf
+  protocol: protocol_a
+
+  # 80/20 stratified carve out of official Train (2661 clips).
+  # → ~2129 train / ~532 dev. Official Val (766) is the held-out test.
+  dev_split_ratio: 0.2
+  dev_split_seed: 123         # fixed across all training seeds and ablations
+
+
+training:
+  batch_size: 8                       # Smaller batch for longer sequences
+  max_epochs: 80
+  lr: 3.0e-4
+  use_amp: false
+  num_workers: 0                      # HDF5 + forked workers = deadlock
+
+train:
+  # Multi-seed averaging for the main result.
+  # Each seed produces an independent train/checkpoint/test triple.
+  # Reported metric is mean ± std over seeds.
+  seeds: [44]
+
+
+  # VGAF-specific overrides (most things inherit from base.yaml).
+  # epochs: 50    # inherited
+  # patience: 10  # inherited

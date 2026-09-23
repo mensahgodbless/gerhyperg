@@ -1,0 +1,43 @@
+# ============================================================================
+# GECV Dataset Configuration
+# ============================================================================
+# Group Emotion Composite Video — 408 clips across positive/negative/neutral.
+# Variable clip duration (3.9-30.1s, median ~10s). Dense crowds: mean=25
+# faces/frame vs VGAF's 4.9. Directory-structure labelling — no separate
+# label file.
+#
+# 10-fold cross-validation protocol (Wang ICPR 2024). Class distribution
+# 201/100/107 is mildly imbalanced; class weights handled in training.
+# ============================================================================
+
+model:
+  num_classes: 3
+  backbone:
+    audio_dim: 1024         # HuBERT-Large audio features
+    text_dim: 0             # No text features
+
+data:
+  dataset: "gecv"
+  data_root: "/path/to/datasets/GECV/GECV"
+  feature_cache_dir: "/path/to/datasets/gerhyperg_features/gecv"
+  max_persons: 30           # GECV mean=25 faces/frame, needs more slots than VGAF
+  face_size: 260
+  body_size: 224
+  video_root: /path/to/datasets/GECV/GECV
+  cache_root: /path/to/datasets/gerhyperg_features/gecv
+  protocol: cv10
+  num_folds: 10
+  fold_seed: 42             # fixed so folds are identical across ablations
+
+  # T=15 uniform sampling is baked into extract_visual_features.py; fps and
+  # max_frames are not used by the new per-clip extractor.
+
+
+train:
+  patience: 25
+  # Single seed — variance reported across the 10 folds.
+  seeds: [42]
+  
+eval:
+  kfold: 10
+  kfold_seed: 42

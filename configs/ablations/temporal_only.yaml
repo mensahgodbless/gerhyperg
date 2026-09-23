@@ -1,0 +1,7 @@
+# configs/ablations/temporal_only.yaml
+model:
+  temporal:
+    enabled: true
+
+train:
+  active_branches: [temporal]

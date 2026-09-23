@@ -1,0 +1,66 @@
+{
+  "source_config": "results/vgaf_no_pose_temporal/seed_43/config.yaml",
+  "checkpoint": "results/vgaf_no_pose_temporal/seed_43/best_model.pt",
+  "target_dataset": "gecv",
+  "target_split": null,
+  "drop_flags": {
+    "drop_visual": false,
+    "drop_audio": false,
+    "drop_scene": false,
+    "drop_temporal": false
+  },
+  "overall": {
+    "accuracy": 0.7009803652763367,
+    "weighted_f1": 0.7058111704501563,
+    "per_class_accuracy": [
+      0.7611940503120422,
+      0.6915887594223022,
+      0.5899999737739563
+    ],
+    "per_class_names": [
+      "positive",
+      "neutral",
+      "negative"
+    ],
+    "confusion_matrix": [
+      [
+        153,
+        16,
+        32
+      ],
+      [
+        11,
+        74,
+        22
+      ],
+      [
+        18,
+        23,
+        59
+      ]
+    ],
+    "num_samples": 408
+  },
+  "face_count_stratified": {
+    "\u22641": {
+      "n": 11,
+      "accuracy": 1.0,
+      "weighted_f1": 1.0
+    },
+    "2-4": {
+      "n": 9,
+      "accuracy": 0.4444444477558136,
+      "weighted_f1": 0.41975308641975306
+    },
+    "5-9": {
+      "n": 56,
+      "accuracy": 0.6607142686843872,
+      "weighted_f1": 0.6465972752737459
+    },
+    "\u226510": {
+      "n": 332,
+      "accuracy": 0.7048192620277405,
+      "weighted_f1": 0.7096176085814385
+    }
+  }
+}

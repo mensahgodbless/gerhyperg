@@ -1,0 +1,13 @@
+# Python 3.10. Training and evaluation on cached features.
+# Install PyTorch for your CUDA version first (paper: torch 2.9.0 + CUDA 12.6):
+#   pip install torch==2.9.0 torchvision==0.24.0 torchaudio==2.9.0 \
+#       --index-url https://download.pytorch.org/whl/cu126
+numpy==2.2.6
+scipy==1.15.3
+h5py==3.16.0
+PyYAML==6.0.3
+scikit-learn==1.7.2
+pandas==2.3.3
+tqdm==4.67.3
+matplotlib==3.10.8
+seaborn==0.13.2

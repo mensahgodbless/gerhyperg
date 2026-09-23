@@ -1,0 +1,7 @@
+# Decomposition ablation: published Mean-pool with the learned temporal
+# attention pool (Eq. 6) replaced by a uniform mean over valid frames.
+# Isolates the contribution of learned temporal pooling.
+model:
+  visual:
+    backbone: mean_pool
+    temporal_pool: uniform

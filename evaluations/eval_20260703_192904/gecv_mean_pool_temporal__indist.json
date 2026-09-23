@@ -1,0 +1,61 @@
+{
+  "eval": "gecv",
+  "config": "mean_pool_temporal",
+  "n_checkpoints": 10,
+  "accuracy_mean": 92.90156722068787,
+  "accuracy_std": 2.774263930631928,
+  "f1_name": "macro_f1",
+  "f1_mean": 91.93354025426575,
+  "f1_std": 3.4569466406697495,
+  "per_class_accuracy_mean": {
+    "positive": 97.0,
+    "neutral": 88.82,
+    "negative": 89.0
+  },
+  "confusion_sum": [
+    [
+      195,
+      4,
+      2
+    ],
+    [
+      6,
+      95,
+      6
+    ],
+    [
+      5,
+      6,
+      89
+    ]
+  ],
+  "recall_pct": [
+    [
+      97.01,
+      1.99,
+      1.0
+    ],
+    [
+      5.61,
+      88.79,
+      5.61
+    ],
+    [
+      5.0,
+      6.0,
+      89.0
+    ]
+  ],
+  "checkpoints": [
+    "./results/gecv_mean_pool_temporal/fold_0/best_model.pt",
+    "./results/gecv_mean_pool_temporal/fold_1/best_model.pt",
+    "./results/gecv_mean_pool_temporal/fold_2/best_model.pt",
+    "./results/gecv_mean_pool_temporal/fold_3/best_model.pt",
+    "./results/gecv_mean_pool_temporal/fold_4/best_model.pt",
+    "./results/gecv_mean_pool_temporal/fold_5/best_model.pt",
+    "./results/gecv_mean_pool_temporal/fold_6/best_model.pt",
+    "./results/gecv_mean_pool_temporal/fold_7/best_model.pt",
+    "./results/gecv_mean_pool_temporal/fold_8/best_model.pt",
+    "./results/gecv_mean_pool_temporal/fold_9/best_model.pt"
+  ]
+}

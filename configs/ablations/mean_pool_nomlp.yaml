@@ -1,0 +1,6 @@
+# Decomposition ablation: Mean-pool without the residual refinement MLP,
+# learned temporal pooling retained. Isolates the MLP's contribution.
+model:
+  visual:
+    backbone: mean_pool_nomlp
+    temporal_pool: attn

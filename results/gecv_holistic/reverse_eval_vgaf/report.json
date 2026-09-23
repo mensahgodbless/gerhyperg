@@ -1,0 +1,626 @@
+{
+  "config_name": "gecv_holistic",
+  "source_dataset": "gecv",
+  "target_dataset": "vgaf",
+  "target_split": "val",
+  "folds_root": "results/gecv_holistic",
+  "checkpoint_name": "best_model.pt",
+  "per_fold": [
+    {
+      "fold_dir": "results/gecv_holistic/fold_0",
+      "checkpoint": "results/gecv_holistic/fold_0/best_model.pt",
+      "accuracy": 0.6383811831474304,
+      "weighted_f1": 0.6379958078250696,
+      "per_class_accuracy": [
+        0.6456953883171082,
+        0.6928571462631226,
+        0.54347825050354
+      ],
+      "per_class_names": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          195,
+          81,
+          26
+        ],
+        [
+          56,
+          194,
+          30
+        ],
+        [
+          29,
+          55,
+          100
+        ]
+      ],
+      "num_samples": 766,
+      "face_count_stratified": {
+        "\u22641": {
+          "n": 117,
+          "accuracy": 0.6068376302719116,
+          "weighted_f1": 0.6170418705758599
+        },
+        "2-4": {
+          "n": 437,
+          "accuracy": 0.6750572323799133,
+          "weighted_f1": 0.6740780373819881
+        },
+        "5-9": {
+          "n": 111,
+          "accuracy": 0.5585585832595825,
+          "weighted_f1": 0.5665570309533158
+        },
+        "\u226510": {
+          "n": 101,
+          "accuracy": 0.603960394859314,
+          "weighted_f1": 0.5734398344386067
+        }
+      }
+    },
+    {
+      "fold_dir": "results/gecv_holistic/fold_1",
+      "checkpoint": "results/gecv_holistic/fold_1/best_model.pt",
+      "accuracy": 0.6644908785820007,
+      "weighted_f1": 0.6643742872495109,
+      "per_class_accuracy": [
+        0.6986755132675171,
+        0.6357142925262451,
+        0.6521739363670349
+      ],
+      "per_class_names": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          211,
+          60,
+          31
+        ],
+        [
+          64,
+          178,
+          38
+        ],
+        [
+          31,
+          33,
+          120
+        ]
+      ],
+      "num_samples": 766,
+      "face_count_stratified": {
+        "\u22641": {
+          "n": 117,
+          "accuracy": 0.6239316463470459,
+          "weighted_f1": 0.6296935116501253
+        },
+        "2-4": {
+          "n": 437,
+          "accuracy": 0.695652186870575,
+          "weighted_f1": 0.6952549685608618
+        },
+        "5-9": {
+          "n": 111,
+          "accuracy": 0.6126126050949097,
+          "weighted_f1": 0.613159919640478
+        },
+        "\u226510": {
+          "n": 101,
+          "accuracy": 0.6336633563041687,
+          "weighted_f1": 0.5977369165487978
+        }
+      }
+    },
+    {
+      "fold_dir": "results/gecv_holistic/fold_2",
+      "checkpoint": "results/gecv_holistic/fold_2/best_model.pt",
+      "accuracy": 0.6214098930358887,
+      "weighted_f1": 0.6211092439027709,
+      "per_class_accuracy": [
+        0.5960264801979065,
+        0.6892856955528259,
+        0.5597826242446899
+      ],
+      "per_class_names": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          180,
+          84,
+          38
+        ],
+        [
+          52,
+          193,
+          35
+        ],
+        [
+          31,
+          50,
+          103
+        ]
+      ],
+      "num_samples": 766,
+      "face_count_stratified": {
+        "\u22641": {
+          "n": 117,
+          "accuracy": 0.6068376302719116,
+          "weighted_f1": 0.612127539106568
+        },
+        "2-4": {
+          "n": 437,
+          "accuracy": 0.6498855948448181,
+          "weighted_f1": 0.6477678142109898
+        },
+        "5-9": {
+          "n": 111,
+          "accuracy": 0.5405405163764954,
+          "weighted_f1": 0.5405848664848346
+        },
+        "\u226510": {
+          "n": 101,
+          "accuracy": 0.603960394859314,
+          "weighted_f1": 0.575129412794004
+        }
+      }
+    },
+    {
+      "fold_dir": "results/gecv_holistic/fold_3",
+      "checkpoint": "results/gecv_holistic/fold_3/best_model.pt",
+      "accuracy": 0.647519588470459,
+      "weighted_f1": 0.6471856308312796,
+      "per_class_accuracy": [
+        0.6721854209899902,
+        0.675000011920929,
+        0.5652173757553101
+      ],
+      "per_class_names": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          203,
+          76,
+          23
+        ],
+        [
+          59,
+          189,
+          32
+        ],
+        [
+          33,
+          47,
+          104
+        ]
+      ],
+      "num_samples": 766,
+      "face_count_stratified": {
+        "\u22641": {
+          "n": 117,
+          "accuracy": 0.6239316463470459,
+          "weighted_f1": 0.6307847477786701
+        },
+        "2-4": {
+          "n": 437,
+          "accuracy": 0.6864988803863525,
+          "weighted_f1": 0.6865966649967777
+        },
+        "5-9": {
+          "n": 111,
+          "accuracy": 0.5405405163764954,
+          "weighted_f1": 0.5468761690983913
+        },
+        "\u226510": {
+          "n": 101,
+          "accuracy": 0.6237623691558838,
+          "weighted_f1": 0.5887292954647578
+        }
+      }
+    },
+    {
+      "fold_dir": "results/gecv_holistic/fold_4",
+      "checkpoint": "results/gecv_holistic/fold_4/best_model.pt",
+      "accuracy": 0.5731070637702942,
+      "weighted_f1": 0.5663411039848973,
+      "per_class_accuracy": [
+        0.41721853613853455,
+        0.7285714149475098,
+        0.592391312122345
+      ],
+      "per_class_names": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          126,
+          97,
+          79
+        ],
+        [
+          40,
+          204,
+          36
+        ],
+        [
+          22,
+          53,
+          109
+        ]
+      ],
+      "num_samples": 766,
+      "face_count_stratified": {
+        "\u22641": {
+          "n": 117,
+          "accuracy": 0.5555555820465088,
+          "weighted_f1": 0.5500323431357914
+        },
+        "2-4": {
+          "n": 437,
+          "accuracy": 0.6041190028190613,
+          "weighted_f1": 0.5935434293798961
+        },
+        "5-9": {
+          "n": 111,
+          "accuracy": 0.4954954981803894,
+          "weighted_f1": 0.4903199903199903
+        },
+        "\u226510": {
+          "n": 101,
+          "accuracy": 0.5445544719696045,
+          "weighted_f1": 0.5437645255386996
+        }
+      }
+    },
+    {
+      "fold_dir": "results/gecv_holistic/fold_5",
+      "checkpoint": "results/gecv_holistic/fold_5/best_model.pt",
+      "accuracy": 0.6462141275405884,
+      "weighted_f1": 0.646080247127006,
+      "per_class_accuracy": [
+        0.6821191906929016,
+        0.6107142567634583,
+        0.6413043737411499
+      ],
+      "per_class_names": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          206,
+          63,
+          33
+        ],
+        [
+          68,
+          171,
+          41
+        ],
+        [
+          31,
+          35,
+          118
+        ]
+      ],
+      "num_samples": 766,
+      "face_count_stratified": {
+        "\u22641": {
+          "n": 117,
+          "accuracy": 0.6068376302719116,
+          "weighted_f1": 0.6133985424274867
+        },
+        "2-4": {
+          "n": 437,
+          "accuracy": 0.6773455142974854,
+          "weighted_f1": 0.6768076667936939
+        },
+        "5-9": {
+          "n": 111,
+          "accuracy": 0.5855855941772461,
+          "weighted_f1": 0.5857967857967857
+        },
+        "\u226510": {
+          "n": 101,
+          "accuracy": 0.6237623691558838,
+          "weighted_f1": 0.5902161644735902
+        }
+      }
+    },
+    {
+      "fold_dir": "results/gecv_holistic/fold_6",
+      "checkpoint": "results/gecv_holistic/fold_6/best_model.pt",
+      "accuracy": 0.6292428374290466,
+      "weighted_f1": 0.6287642058372824,
+      "per_class_accuracy": [
+        0.6258277893066406,
+        0.699999988079071,
+        0.5271739363670349
+      ],
+      "per_class_names": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          189,
+          82,
+          31
+        ],
+        [
+          51,
+          196,
+          33
+        ],
+        [
+          28,
+          59,
+          97
+        ]
+      ],
+      "num_samples": 766,
+      "face_count_stratified": {
+        "\u22641": {
+          "n": 117,
+          "accuracy": 0.6153846383094788,
+          "weighted_f1": 0.6226344896505394
+        },
+        "2-4": {
+          "n": 437,
+          "accuracy": 0.6659038662910461,
+          "weighted_f1": 0.6642064830409703
+        },
+        "5-9": {
+          "n": 111,
+          "accuracy": 0.5315315127372742,
+          "weighted_f1": 0.5409679374087416
+        },
+        "\u226510": {
+          "n": 101,
+          "accuracy": 0.594059407711029,
+          "weighted_f1": 0.5657605700207847
+        }
+      }
+    },
+    {
+      "fold_dir": "results/gecv_holistic/fold_7",
+      "checkpoint": "results/gecv_holistic/fold_7/best_model.pt",
+      "accuracy": 0.6201044321060181,
+      "weighted_f1": 0.6204777660071161,
+      "per_class_accuracy": [
+        0.5860927104949951,
+        0.6642857193946838,
+        0.6086956262588501
+      ],
+      "per_class_names": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          177,
+          76,
+          49
+        ],
+        [
+          56,
+          186,
+          38
+        ],
+        [
+          27,
+          45,
+          112
+        ]
+      ],
+      "num_samples": 766,
+      "face_count_stratified": {
+        "\u22641": {
+          "n": 117,
+          "accuracy": 0.5897436141967773,
+          "weighted_f1": 0.593052835370658
+        },
+        "2-4": {
+          "n": 437,
+          "accuracy": 0.6498855948448181,
+          "weighted_f1": 0.6495784493221133
+        },
+        "5-9": {
+          "n": 111,
+          "accuracy": 0.5495495200157166,
+          "weighted_f1": 0.543943943943944
+        },
+        "\u226510": {
+          "n": 101,
+          "accuracy": 0.603960394859314,
+          "weighted_f1": 0.5879481707510394
+        }
+      }
+    },
+    {
+      "fold_dir": "results/gecv_holistic/fold_8",
+      "checkpoint": "results/gecv_holistic/fold_8/best_model.pt",
+      "accuracy": 0.622715413570404,
+      "weighted_f1": 0.6220747185026094,
+      "per_class_accuracy": [
+        0.6490066051483154,
+        0.6642857193946838,
+        0.5163043737411499
+      ],
+      "per_class_names": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          196,
+          74,
+          32
+        ],
+        [
+          61,
+          186,
+          33
+        ],
+        [
+          30,
+          59,
+          95
+        ]
+      ],
+      "num_samples": 766,
+      "face_count_stratified": {
+        "\u22641": {
+          "n": 117,
+          "accuracy": 0.6068376302719116,
+          "weighted_f1": 0.6148881663488405
+        },
+        "2-4": {
+          "n": 437,
+          "accuracy": 0.6544622182846069,
+          "weighted_f1": 0.6527539466703687
+        },
+        "5-9": {
+          "n": 111,
+          "accuracy": 0.522522509098053,
+          "weighted_f1": 0.531053118010072
+        },
+        "\u226510": {
+          "n": 101,
+          "accuracy": 0.6138613820075989,
+          "weighted_f1": 0.5844694141108876
+        }
+      }
+    },
+    {
+      "fold_dir": "results/gecv_holistic/fold_9",
+      "checkpoint": "results/gecv_holistic/fold_9/best_model.pt",
+      "accuracy": 0.6083551049232483,
+      "weighted_f1": 0.6069054122382928,
+      "per_class_accuracy": [
+        0.6158940196037292,
+        0.6892856955528259,
+        0.4728260934352875
+      ],
+      "per_class_names": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          186,
+          83,
+          33
+        ],
+        [
+          53,
+          193,
+          34
+        ],
+        [
+          31,
+          66,
+          87
+        ]
+      ],
+      "num_samples": 766,
+      "face_count_stratified": {
+        "\u22641": {
+          "n": 117,
+          "accuracy": 0.632478654384613,
+          "weighted_f1": 0.6383462124755657
+        },
+        "2-4": {
+          "n": 437,
+          "accuracy": 0.6292906403541565,
+          "weighted_f1": 0.6241036404050221
+        },
+        "5-9": {
+          "n": 111,
+          "accuracy": 0.4954954981803894,
+          "weighted_f1": 0.5054243069284703
+        },
+        "\u226510": {
+          "n": 101,
+          "accuracy": 0.6138613820075989,
+          "weighted_f1": 0.5844694141108876
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "num_folds": 10,
+    "accuracy_mean": 0.6271540522575378,
+    "accuracy_std": 0.023831414214827637,
+    "weighted_f1_mean": 0.6261308423505835,
+    "weighted_f1_std": 0.025435431579250913,
+    "fold_accuracies": [
+      0.6383811831474304,
+      0.6644908785820007,
+      0.6214098930358887,
+      0.647519588470459,
+      0.5731070637702942,
+      0.6462141275405884,
+      0.6292428374290466,
+      0.6201044321060181,
+      0.622715413570404,
+      0.6083551049232483
+    ],
+    "per_class_accuracy_mean": [
+      0.6188741654157639,
+      0.6749999940395355,
+      0.5679347902536392
+    ],
+    "per_class_accuracy_std": [
+      0.07560190983985195,
+      0.03182381338544658,
+      0.053650417100753064
+    ],
+    "per_class_names": [
+      "positive",
+      "neutral",
+      "negative"
+    ],
+    "face_count_stratified": {
+      "\u22641": {
+        "n": 117,
+        "accuracy_mean": 0.6068376302719116,
+        "accuracy_std": 0.020583921130012527
+      },
+      "2-4": {
+        "n": 437,
+        "accuracy_mean": 0.6588100731372833,
+        "accuracy_std": 0.02612005476023265
+      },
+      "5-9": {
+        "n": 111,
+        "accuracy_mean": 0.5432432353496551,
+        "accuracy_std": 0.03467005775887795
+      },
+      "\u226510": {
+        "n": 101,
+        "accuracy_mean": 0.6059405922889709,
+        "accuracy_std": 0.023346183383979417
+      }
+    }
+  }
+}

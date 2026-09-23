@@ -1,0 +1,36 @@
+{
+  "fold": 4,
+  "best_epoch": 9,
+  "val_metrics": {
+    "accuracy": 0.9268292784690857,
+    "weighted_f1": 0.9264761276956398,
+    "per_class_accuracy": [
+      0.8500000238418579,
+      1.0,
+      1.0
+    ],
+    "per_class_names": [
+      "positive",
+      "neutral",
+      "negative"
+    ],
+    "confusion_matrix": [
+      [
+        17,
+        2,
+        1
+      ],
+      [
+        0,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        10
+      ]
+    ],
+    "num_samples": 41
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "eval": "vgaf",
+  "config": "hypergraph_temporal",
+  "n_checkpoints": 5,
+  "accuracy_mean": 75.58746695518494,
+  "accuracy_std": 1.7397749984789883,
+  "f1_name": "macro_f1",
+  "f1_mean": 74.75977465301865,
+  "f1_std": 1.8824737750280232,
+  "per_class_accuracy_mean": {
+    "positive": 84.11,
+    "neutral": 70.64,
+    "negative": 69.13
+  },
+  "confusion_sum": [
+    [
+      1270,
+      177,
+      63
+    ],
+    [
+      241,
+      989,
+      170
+    ],
+    [
+      99,
+      185,
+      636
+    ]
+  ],
+  "recall_pct": [
+    [
+      84.11,
+      11.72,
+      4.17
+    ],
+    [
+      17.21,
+      70.64,
+      12.14
+    ],
+    [
+      10.76,
+      20.11,
+      69.13
+    ]
+  ],
+  "checkpoints": [
+    "./results/vgaf_hypergraph_temporal/seed_42/best_model.pt",
+    "./results/vgaf_hypergraph_temporal/seed_43/best_model.pt",
+    "./results/vgaf_hypergraph_temporal/seed_44/best_model.pt",
+    "./results/vgaf_hypergraph_temporal/seed_45/best_model.pt",
+    "./results/vgaf_hypergraph_temporal/seed_46/best_model.pt"
+  ]
+}

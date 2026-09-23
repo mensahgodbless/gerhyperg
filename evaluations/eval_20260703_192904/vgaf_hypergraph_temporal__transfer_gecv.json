@@ -1,0 +1,56 @@
+{
+  "eval": "transfer_gecv",
+  "config": "hypergraph_temporal",
+  "n_checkpoints": 5,
+  "accuracy_mean": 72.9411768913269,
+  "accuracy_std": 0.8289973930754412,
+  "f1_name": "macro_f1",
+  "f1_mean": 70.07535819414021,
+  "f1_std": 0.9153122670011535,
+  "per_class_accuracy_mean": {
+    "positive": 82.39,
+    "neutral": 70.65,
+    "negative": 56.4
+  },
+  "confusion_sum": [
+    [
+      828,
+      52,
+      125
+    ],
+    [
+      79,
+      378,
+      78
+    ],
+    [
+      128,
+      90,
+      282
+    ]
+  ],
+  "recall_pct": [
+    [
+      82.39,
+      5.17,
+      12.44
+    ],
+    [
+      14.77,
+      70.65,
+      14.58
+    ],
+    [
+      25.6,
+      18.0,
+      56.4
+    ]
+  ],
+  "checkpoints": [
+    "./results/vgaf_hypergraph_temporal/seed_42/best_model.pt",
+    "./results/vgaf_hypergraph_temporal/seed_43/best_model.pt",
+    "./results/vgaf_hypergraph_temporal/seed_44/best_model.pt",
+    "./results/vgaf_hypergraph_temporal/seed_45/best_model.pt",
+    "./results/vgaf_hypergraph_temporal/seed_46/best_model.pt"
+  ]
+}

@@ -1,0 +1,13 @@
+# Feature extraction from raw video (not needed to train on cached features).
+# facenet-pytorch pins an older torch; install it with --no-deps:
+#   pip install -r requirements-extract.txt
+#   pip install --no-deps facenet-pytorch==2.5.3
+-r requirements.txt
+timm==0.9.12
+open_clip_torch==2.32.0
+transformers==5.3.0
+ultralytics==8.4.53
+opencv-python-headless==4.13.0.92
+av==17.1.0
+decord==0.6.0
+torchcodec==0.13.0

@@ -1,0 +1,7 @@
+# Ablation: collapse the visual branch to a holistic representation —
+# masked mean over both persons and frames → MLP. Tests whether per-person
+# structured features are needed at all. Doubles as a Kumar ICPR 2024-style
+# baseline (decision fusion over face/scene/audio without per-person modelling).
+model:
+  visual:
+    backbone: holistic

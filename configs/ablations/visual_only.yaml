@@ -1,0 +1,5 @@
+# Ablation: train with audio and scene branches DISABLED. Pure single-
+# modality baseline. Different from eval-time drop_audio/drop_scene on a
+# full-model checkpoint (which measures redundancy in trained fusion).
+train:
+  active_branches: [visual]

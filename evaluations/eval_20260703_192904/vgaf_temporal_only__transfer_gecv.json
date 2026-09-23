@@ -1,0 +1,56 @@
+{
+  "eval": "transfer_gecv",
+  "config": "temporal_only",
+  "n_checkpoints": 5,
+  "accuracy_mean": 63.186274766922004,
+  "accuracy_std": 1.9632335429715586,
+  "f1_name": "macro_f1",
+  "f1_mean": 61.61967826226387,
+  "f1_std": 1.9676635289034554,
+  "per_class_accuracy_mean": {
+    "positive": 69.85,
+    "neutral": 65.05,
+    "negative": 47.8
+  },
+  "confusion_sum": [
+    [
+      702,
+      46,
+      257
+    ],
+    [
+      84,
+      348,
+      103
+    ],
+    [
+      219,
+      42,
+      239
+    ]
+  ],
+  "recall_pct": [
+    [
+      69.85,
+      4.58,
+      25.57
+    ],
+    [
+      15.7,
+      65.05,
+      19.25
+    ],
+    [
+      43.8,
+      8.4,
+      47.8
+    ]
+  ],
+  "checkpoints": [
+    "./results/vgaf_temporal_only/seed_42/best_model.pt",
+    "./results/vgaf_temporal_only/seed_43/best_model.pt",
+    "./results/vgaf_temporal_only/seed_44/best_model.pt",
+    "./results/vgaf_temporal_only/seed_45/best_model.pt",
+    "./results/vgaf_temporal_only/seed_46/best_model.pt"
+  ]
+}

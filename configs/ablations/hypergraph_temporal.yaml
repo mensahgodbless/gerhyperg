@@ -1,0 +1,6 @@
+# configs/ablations/hypergraph_temporal.yaml
+model:
+  temporal:
+    enabled: true
+train:
+  active_branches: [visual, audio, scene, temporal]

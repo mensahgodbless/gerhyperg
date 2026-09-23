@@ -1,0 +1,8 @@
+# Decomposition ablation: per-person projection, masked mean over persons,
+# uniform mean over frames, no refinement MLP. Closest structured analogue
+# of Holistic; differs from it only in projection order (project-then-pool
+# vs pool-then-project) and frame weighting (frame-equal vs person-count).
+model:
+  visual:
+    backbone: mean_pool_nomlp
+    temporal_pool: uniform
