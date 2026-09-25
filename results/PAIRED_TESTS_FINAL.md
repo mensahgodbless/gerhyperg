@@ -209,7 +209,7 @@ Significance markers reflect **Holm-Bonferroni** corrected p: `*` p<0.05, `**` p
 
 Counts of significant pairs (after correction) and large-effect-size pairs (|d| ≥ 0.8) per family.
 
-| Family | Pairs | Holm α<0.05 | Holm α<0.01 | Bonf α<0.05 | |d| ≥ 0.8 |
+| Family | Pairs | Holm α<0.05 | Holm α<0.01 | Bonf α<0.05 | \|d\| ≥ 0.8 |
 |---|---|---|---|---|---|
 | 3-branch pairwise | 20 | 0 | 0 | 0 | 5 |
 | 4-branch pairwise | 20 | 0 | 0 | 0 | 3 |
