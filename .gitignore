@@ -27,4 +27,5 @@ wandb/
 .vscode/
 .idea/
 results/*/
+result/
 evaluations/
