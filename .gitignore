@@ -26,3 +26,4 @@ wandb/
 # Editors
 .vscode/
 .idea/
+results/*/
